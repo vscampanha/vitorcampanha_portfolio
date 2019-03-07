@@ -68,7 +68,7 @@ ul {
   top: 17px; }
 
 #header-home {
-  background: url("../img/background.jpg") no-repeat center center/cover;
+  background: url("../img/background.jpg") no-repeat center;
   height: 100vh;
   overflow: hidden;
   color: #fff;
@@ -80,21 +80,20 @@ ul {
     left: 0;
     z-index: -1; }
     #header-home .green-background img {
-      width: 110rem;
-      height: 46rem; }
+      width: 88vw;
+      height: 80vh; }
   #header-home .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 1.5rem 0 0 0; }
+    margin-top: 1.5rem; }
     #header-home .navbar ul {
       display: flex;
       justify-content: flex-end;
       align-items: center; }
       #header-home .navbar ul li {
-        padding-left: 2.2rem; }
+        padding: 1rem 1.2rem; }
         #header-home .navbar ul li a {
-          font-size: 1.5rem;
-          text-decoration: none;
+          font-size: 1rem;
           color: #fff;
           text-transform: uppercase;
           border-bottom: 3px transparent solid;
@@ -106,47 +105,50 @@ ul {
             border-color: #d9eddf; }
           #header-home .navbar ul li a.btn {
             border-bottom: 0;
-            padding-bottom: 1rem; }
+            padding-bottom: 1rem;
+            font-size: 1.2rem; }
   #header-home .context-home {
     position: absolute;
     bottom: 0;
+    margin-left: 2rem;
     width: 100%;
-    margin: auto;
     overflow: hidden;
     display: grid;
     grid-template-areas: "text img" "text img" "social img"; }
     #header-home .context-home .content-text {
       grid-area: text;
-      margin-top: 9rem; }
+      margin-top: 8rem; }
       #header-home .context-home .content-text .wrapper {
         display: flex;
         align-items: baseline;
         margin-bottom: 2rem; }
-        #header-home .context-home .content-text .wrapper h3 {
-          margin-right: 1rem;
-          line-height: normal;
-          font-size: 24px; }
+        #header-home .context-home .content-text .wrapper span {
+          font-size: 1.5rem; }
         #header-home .context-home .content-text .wrapper h1 {
           line-height: normal;
           font-size: 48px;
           text-transform: uppercase; }
-    #header-home .context-home .buttons {
-      margin-top: 2rem;
+    #header-home .context-home .buttons-home {
+      margin-top: 2.5rem;
       display: flex; }
-      #header-home .context-home .buttons .box {
+      #header-home .context-home .buttons-home .box {
         margin-right: 8rem; }
-      #header-home .context-home .buttons .btn-box {
+        #header-home .context-home .buttons-home .box .btn-box {
+          transition: padding 0.3s ease-in-out;
+          max-height: 4rem; }
+        #header-home .context-home .buttons-home .box:hover .btn-box {
+          padding: 3rem 9rem; }
+      #header-home .context-home .buttons-home .btn-box {
         position: absolute;
-        width: 17rem;
-        height: 5.2rem;
+        padding: 2.5rem 7.5rem;
         background: #00c896;
         z-index: -1; }
-      #header-home .context-home .buttons .btn-header {
+      #header-home .context-home .buttons-home .btn-header {
         display: flex;
         flex-flow: column;
         padding-top: 1rem;
         padding-left: 0.5rem; }
-        #header-home .context-home .buttons .btn-header a {
+        #header-home .context-home .buttons-home .btn-header a {
           text-transform: uppercase;
           line-height: normal;
           font-size: 2.2rem; }
@@ -156,10 +158,52 @@ ul {
       padding: 0.5rem; }
       #header-home .context-home .social img {
         margin-right: 2rem; }
+        #header-home .context-home .social img:hover {
+          opacity: 0.7; }
     #header-home .context-home .personal_image {
       grid-area: img; }
       #header-home .context-home .personal_image img {
-        margin-bottom: -0.3rem;
-        margin-right: 200px;
+        margin-bottom: -0.4rem;
+        margin-right: 15rem;
         width: 37.5rem;
         height: 47rem; }
+
+#about {
+  background: #fff; }
+  #about .about-text {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 32%;
+    text-align: center; }
+    #about .about-text h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem; }
+    #about .about-text p {
+      padding: 1rem 0.5rem;
+      border: 3px solid #00c896; }
+    #about .about-text .lead {
+      padding: 1rem 5rem;
+      letter-spacing: 0.1em;
+      font-size: 1.2rem; }
+    #about .about-text .context {
+      border-top: none;
+      background: #00c896;
+      color: #d9eddf;
+      font-weight: 600;
+      font-size: 1rem; }
+    #about .about-text .buttons-about {
+      display: flex;
+      width: 100%;
+      margin-top: 1rem;
+      text-transform: uppercase;
+      justify-content: center;
+      align-content: center; }
+      #about .about-text .buttons-about .btn {
+        font-size: 1.5rem;
+        width: 40rem; }
+        #about .about-text .buttons-about .btn:first-child {
+          border: 4px solid #00c896;
+          background: #fff;
+          color: #00c896;
+          margin-right: 1rem;
+          width: 20rem; }
