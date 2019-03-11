@@ -198,72 +198,94 @@ ul {
 
 //About Me
 #about {
-  height: 60vh;
+  width: 100vw;
+  height: 70vh;
   background: #fff;
-  text-align: center;
 
   .about-text {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50rem;
-    height: 100%;
-    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin: 0 25%;
+    padding: 0 5rem 0 5rem;
 
-    .container {
-      // margin: auto 30%;
-      // padding: 0;
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
 
-      h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-      }
+    p {
+      padding: 1rem 5rem 1rem 5rem;
+      border: 2px solid $primary-color;
+    }
 
-      p {
-        border: 3px solid $primary-color;
-      }
+    .lead {
+      font-size: 1.5rem;
+    }
 
-      .lead {
-        padding: 1rem 5rem;
-        letter-spacing: 0.1em;
-        font-size: 1.2rem;
-      }
-      .context {
-        padding: 1.5rem 5rem;
-        border-top: none;
-        background: $primary-color;
-        font-weight: 600;
-        font-size: 1rem;
-      }
+    .context {
+      background: $primary-color;
+    }
 
-      .buttons-about {
-        display: flex;
-        width: 100%;
-        margin-top: 1.5rem;
+    .buttons-about {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 1rem;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        border: 2px solid $primary-color;
         text-transform: uppercase;
-        justify-content: center;
-        align-content: center;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0.5rem 0;
 
-        .btn {
-          font-size: 1.5rem;
-          width: 70%;
-          border: 2px solid $primary-color;
-          padding: 0.2rem 0;
-
-          &:first-child {
-            background: #fff;
-            color: $primary-color;
-            margin-right: 1rem;
-            width: 30%;
-          }
+        &:first-child {
+          background: #fff;
+          color: $primary-color;
+          margin-right: 1rem;
+          width: 35%;
         }
       }
     }
   }
 }
-
 //Electrical Enginer
 #electrical {
   background: $secondary-color;
+
+  h1 {
+    grid-area: title;
+    font-size: 1.8rem;
+    background: $primary-color;
+    margin: 5% 65% 10% 0;
+    padding: 3rem 0.5rem 0.5rem 4rem;
+    text-align: end;
+    color: #fff;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "boxes"
+      "tech";
+
+    .boxes {
+      grid-area: boxes;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .main-box {
+        padding: 15rem 13rem;
+      }
+    }
+
+    .tech {
+      grid-area: tech;
+    }
+  }
 }

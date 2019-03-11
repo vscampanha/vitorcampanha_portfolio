@@ -169,49 +169,65 @@ ul {
         height: 47rem; }
 
 #about {
-  height: 60vh;
-  background: #fff;
-  text-align: center; }
+  width: 100vw;
+  height: 70vh;
+  background: #fff; }
   #about .about-text {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 50rem;
-    height: 100%;
-    margin: auto; }
-    #about .about-text .container h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem; }
-    #about .about-text .container p {
-      border: 3px solid #00c896; }
-    #about .about-text .container .lead {
-      padding: 1rem 5rem;
-      letter-spacing: 0.1em;
-      font-size: 1.2rem; }
-    #about .about-text .container .context {
-      padding: 1.5rem 5rem;
-      border-top: none;
-      background: #00c896;
-      font-weight: 600;
-      font-size: 1rem; }
-    #about .about-text .container .buttons-about {
+    justify-content: center;
+    text-align: center;
+    margin: 0 25%;
+    padding: 0 5rem 0 5rem; }
+    #about .about-text h1 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem; }
+    #about .about-text p {
+      padding: 1rem 5rem 1rem 5rem;
+      border: 2px solid #00c896; }
+    #about .about-text .lead {
+      font-size: 1.5rem; }
+    #about .about-text .context {
+      background: #00c896; }
+    #about .about-text .buttons-about {
       display: flex;
+      justify-content: flex-start;
+      margin-top: 1rem;
       width: 100%;
-      margin-top: 1.5rem;
-      text-transform: uppercase;
-      justify-content: center;
-      align-content: center; }
-      #about .about-text .container .buttons-about .btn {
-        font-size: 1.5rem;
-        width: 70%;
+      align-items: center;
+      justify-content: center; }
+      #about .about-text .buttons-about a {
         border: 2px solid #00c896;
-        padding: 0.2rem 0; }
-        #about .about-text .container .buttons-about .btn:first-child {
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0.5rem 0; }
+        #about .about-text .buttons-about a:first-child {
           background: #fff;
           color: #00c896;
           margin-right: 1rem;
-          width: 30%; }
+          width: 35%; }
 
 #electrical {
   background: #d9eddf; }
+  #electrical h1 {
+    grid-area: title;
+    font-size: 1.8rem;
+    background: #00c896;
+    margin: 5% 65% 10% 0;
+    padding: 3rem 0.5rem 0.5rem 4rem;
+    text-align: end;
+    color: #fff; }
+  #electrical .container {
+    display: grid;
+    grid-template-areas: "boxes" "tech"; }
+    #electrical .container .boxes {
+      grid-area: boxes;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+      #electrical .container .boxes .main-box {
+        padding: 15rem 13rem; }
+    #electrical .container .tech {
+      grid-area: tech; }
