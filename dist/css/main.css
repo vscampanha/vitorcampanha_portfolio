@@ -68,7 +68,8 @@ ul {
   top: 17px; }
 
 #header-home {
-  background: url("../img/background.jpg") no-repeat center;
+  background: url("../img/Group.jpg") no-repeat center;
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
   color: #fff;
@@ -165,8 +166,8 @@ ul {
       #header-home .context-home .personal_image img {
         margin-bottom: -0.4rem;
         margin-right: 15rem;
-        width: 37.5rem;
-        height: 47rem; }
+        width: 616px;
+        height: 780px; }
 
 #about {
   width: 100vw;
@@ -213,7 +214,6 @@ ul {
 #electrical {
   background: #d9eddf; }
   #electrical h1 {
-    grid-area: title;
     font-size: 1.8rem;
     background: #00c896;
     margin: 5% 65% 10% 0;
@@ -222,12 +222,17 @@ ul {
     color: #fff; }
   #electrical .container {
     display: grid;
-    grid-template-areas: "boxes" "tech"; }
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%; }
     #electrical .container .boxes {
-      grid-area: boxes;
       display: grid;
-      grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4rem;
+      text-align: center;
+      align-items: center; }
       #electrical .container .boxes .main-box {
-        padding: 15rem 13rem; }
+        padding: 7rem 2rem;
+        background: blue; }
     #electrical .container .tech {
-      grid-area: tech; }
+      grid-column: 1 / span 3;
+      background: green; }

@@ -34,6 +34,7 @@ ul {
 //Home-Page
 #header-home {
   background: $bg-image no-repeat center;
+  background-size: cover;
   height: 100vh;
   overflow: hidden;
   color: $light-text-color;
@@ -187,10 +188,8 @@ ul {
       img {
         margin-bottom: -0.4rem;
         margin-right: 15rem;
-        // width: 60%;
-        // height: 80vh;
-        width: 37.5rem;
-        height: 47rem;
+        width: 616px;
+        height: 780px;
       }
     }
   }
@@ -260,7 +259,6 @@ ul {
   background: $secondary-color;
 
   h1 {
-    grid-area: title;
     font-size: 1.8rem;
     background: $primary-color;
     margin: 5% 65% 10% 0;
@@ -268,24 +266,29 @@ ul {
     text-align: end;
     color: #fff;
   }
+
   .container {
     display: grid;
-    grid-template-areas:
-      "boxes"
-      "tech";
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
 
     .boxes {
-      grid-area: boxes;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      grid-gap: 4rem;
+      text-align: center;
+      align-items: center;
 
       .main-box {
-        padding: 15rem 13rem;
+        padding: 7rem 2rem;
+
+        background: blue;
       }
     }
 
     .tech {
-      grid-area: tech;
+      grid-column: 1 / span 3;
+      background: green;
     }
   }
 }
