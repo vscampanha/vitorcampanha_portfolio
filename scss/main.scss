@@ -46,10 +46,10 @@ ul {
   .green-background {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10%;
     z-index: -1;
     img {
-      width: 88vw;
+      width: 100vw;
       height: 80vh;
     }
   }
@@ -109,7 +109,7 @@ ul {
 
     .content-text {
       grid-area: text;
-      margin-top: 8rem;
+      margin-top: 20%;
 
       .wrapper {
         display: flex;
@@ -197,7 +197,6 @@ ul {
 
 //About Me
 #about {
-  width: 100vw;
   height: 70vh;
   background: #fff;
 
@@ -267,28 +266,65 @@ ul {
     color: #fff;
   }
 
-  .container {
+  .wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    margin-left: 8%;
+    grid-template-areas:
+      "boxes img"
+      "tech img";
+    position: relative;
+    z-index: 1;
 
     .boxes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 4rem;
-      text-align: center;
-      align-items: center;
+      grid-area: boxes;
+      display: flex;
 
       .main-box {
-        padding: 7rem 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1rem;
+        padding: 3rem 0;
+        // width: 306px;
+        // height: 288px;
+        width: 30%;
+        height: 70%;
+        background: #fff;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
-        background: blue;
+        h2 {
+          font-weight: 600;
+          font-size: 1.2rem;
+          padding: 0.5rem;
+        }
+
+        img {
+          width: 15%;
+          margin: auto;
+        }
+
+        p {
+          font-size: 1rem;
+          margin: 1rem;
+        }
       }
     }
-
     .tech {
-      grid-column: 1 / span 3;
-      background: green;
+      grid-area: tech;
+      margin: 0 auto;
+    }
+
+    .eletrical-img {
+      grid-area: img;
+      position: relative;
+      top: -25%;
+      left: -15%;
+      z-index: -1;
+      height: 70%;
+
+      img {
+        width: 110%;
+      }
     }
   }
 }

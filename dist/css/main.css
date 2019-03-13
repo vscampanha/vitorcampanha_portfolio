@@ -78,10 +78,10 @@ ul {
   #header-home .green-background {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10%;
     z-index: -1; }
     #header-home .green-background img {
-      width: 88vw;
+      width: 100vw;
       height: 80vh; }
   #header-home .navbar {
     display: grid;
@@ -118,7 +118,7 @@ ul {
     grid-template-areas: "text img" "text img" "social img"; }
     #header-home .context-home .content-text {
       grid-area: text;
-      margin-top: 8rem; }
+      margin-top: 20%; }
       #header-home .context-home .content-text .wrapper {
         display: flex;
         align-items: baseline;
@@ -170,7 +170,6 @@ ul {
         height: 780px; }
 
 #about {
-  width: 100vw;
   height: 70vh;
   background: #fff; }
   #about .about-text {
@@ -220,19 +219,44 @@ ul {
     padding: 3rem 0.5rem 0.5rem 4rem;
     text-align: end;
     color: #fff; }
-  #electrical .container {
+  #electrical .wrapper {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%; }
-    #electrical .container .boxes {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 4rem;
-      text-align: center;
-      align-items: center; }
-      #electrical .container .boxes .main-box {
-        padding: 7rem 2rem;
-        background: blue; }
-    #electrical .container .tech {
-      grid-column: 1 / span 3;
-      background: green; }
+    margin-left: 8%;
+    grid-template-areas: "boxes img" "tech img";
+    position: relative;
+    z-index: 1; }
+    #electrical .wrapper .boxes {
+      grid-area: boxes;
+      display: flex; }
+      #electrical .wrapper .boxes .main-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 1rem;
+        padding: 3rem 0;
+        width: 30%;
+        height: 70%;
+        background: #fff;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+        #electrical .wrapper .boxes .main-box h2 {
+          font-weight: 600;
+          font-size: 1.2rem;
+          padding: 0.5rem; }
+        #electrical .wrapper .boxes .main-box img {
+          width: 15%;
+          margin: auto; }
+        #electrical .wrapper .boxes .main-box p {
+          font-size: 1rem;
+          margin: 1rem; }
+    #electrical .wrapper .tech {
+      grid-area: tech;
+      margin: 0 auto; }
+    #electrical .wrapper .eletrical-img {
+      grid-area: img;
+      position: relative;
+      top: -25%;
+      left: -15%;
+      z-index: -1;
+      height: 70%; }
+      #electrical .wrapper .eletrical-img img {
+        width: 110%; }
