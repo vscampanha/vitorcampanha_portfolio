@@ -259,7 +259,6 @@ ul {
   //Eletrical Engineer
   &-electrical {
     .wrapper {
-      width: 100vw;
       margin: 5rem 0 5rem 0;
       display: flex;
       flex-direction: row-reverse;
@@ -346,17 +345,16 @@ ul {
     }
   }
 
-  //Eletrical Engineer
+  //Frontend
   &-frontend {
     .wrapper {
-      width: 100vw;
-      margin: 5rem 0 5rem 0;
+      margin: 5rem 0 0 0;
       display: flex;
       flex-direction: row-reverse;
       // align-items: center;
       // justify-content: flex-start;
 
-      .img-electrical {
+      .img-frontend {
         position: relative;
         z-index: -1;
         width: 50%;
@@ -430,6 +428,27 @@ ul {
           i {
             padding: 2rem;
             color: $medium-text-color;
+          }
+        }
+      }
+    }
+
+    .portfolio-btn {
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-align: center;
+        padding: 1rem;
+        cursor: pointer;
+
+        h1 {
+          font-weight: 800;
+          font-size: 1.2rem;
+          color: $medium-text-color;
+
+          &:hover {
+            margin-bottom: 0.5rem;
           }
         }
       }

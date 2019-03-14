@@ -227,7 +227,6 @@ ul {
           width: 35%; }
 
 #job-electrical .wrapper {
-  width: 100vw;
   margin: 5rem 0 5rem 0;
   display: flex;
   flex-direction: row-reverse; }
@@ -289,11 +288,10 @@ ul {
         margin: 0 1rem; }
 
 #job-frontend .wrapper {
-  width: 100vw;
-  margin: 5rem 0 5rem 0;
+  margin: 5rem 0 0 0;
   display: flex;
   flex-direction: row-reverse; }
-  #job-frontend .wrapper .img-electrical {
+  #job-frontend .wrapper .img-frontend {
     position: relative;
     z-index: -1;
     width: 50%;
@@ -347,3 +345,17 @@ ul {
       #job-frontend .wrapper .context .logo-tech i {
         padding: 2rem;
         color: #2f4858; }
+
+#job-frontend .portfolio-btn {
+  display: flex;
+  justify-content: center; }
+  #job-frontend .portfolio-btn a {
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer; }
+    #job-frontend .portfolio-btn a h1 {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #2f4858; }
+      #job-frontend .portfolio-btn a h1:hover {
+        margin-bottom: 0.5rem; }
