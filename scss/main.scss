@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
@@ -253,77 +254,184 @@ ul {
     }
   }
 }
-//Electrical Enginer
-#electrical {
-  background: $secondary-color;
 
-  h1 {
-    font-size: 1.8rem;
-    background: $primary-color;
-    margin: 5% 65% 10% 0;
-    padding: 3rem 0.5rem 0.5rem 4rem;
-    text-align: end;
-    color: #fff;
-  }
-
-  .wrapper {
-    display: grid;
-    margin-left: 8%;
-    grid-template-areas:
-      "boxes img"
-      "tech img";
-    position: relative;
-    z-index: 1;
-
-    .boxes {
-      grid-area: boxes;
+#job {
+  //Eletrical Engineer
+  &-electrical {
+    .wrapper {
+      width: 100vw;
+      margin: 5rem 0 5rem 0;
       display: flex;
+      flex-direction: row-reverse;
 
-      .main-box {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-left: 1rem;
-        padding: 3rem 0;
-        // width: 306px;
-        // height: 288px;
-        width: 30%;
-        height: 70%;
-        background: #fff;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      .img-electrical {
+        position: relative;
+        z-index: -1;
+        width: 40%;
+        min-width: 500px;
+        margin-right: 1rem;
+      }
 
-        h2 {
-          font-weight: 600;
-          font-size: 1.2rem;
-          padding: 0.5rem;
+      .context {
+        position: relative;
+        z-index: 0;
+        width: 60vw;
+
+        .header {
+          background: blue;
+          font-size: 1.8rem;
+          background: $primary-color;
+          margin-right: 40%;
+          padding: 3rem 0.5rem 0.5rem 4rem;
+          text-align: end;
+          color: #fff;
         }
 
-        img {
-          width: 15%;
-          margin: auto;
+        .boxes {
+          position: relative;
+          top: 7%;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          margin-top: 10%;
+          margin-left: 2rem;
+
+          width: 100%;
+          min-width: 800px;
+
+          .box {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background: $medium-text-color;
+            color: #fff;
+            padding: 5% 0;
+            text-align: center;
+            width: 100%;
+
+            // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+            &:nth-child(even) {
+              background: #fff;
+              color: $medium-text-color;
+            }
+
+            .content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 1rem;
+
+              margin: 0 0.5rem;
+
+              img {
+                width: 15%;
+                margin: 0 auto;
+              }
+            }
+          }
         }
 
-        p {
-          font-size: 1rem;
-          margin: 1rem;
+        .logo-tech {
+          display: flex;
+          margin: 5rem 0 0 2rem;
+          padding: 2rem;
+          justify-content: center;
+
+          img {
+            margin: 0 1rem;
+          }
         }
       }
     }
-    .tech {
-      grid-area: tech;
-      margin: 0 auto;
-    }
+  }
 
-    .eletrical-img {
-      grid-area: img;
-      position: relative;
-      top: -25%;
-      left: -15%;
-      z-index: -1;
-      height: 70%;
+  //Eletrical Engineer
+  &-frontend {
+    .wrapper {
+      width: 100vw;
+      margin: 5rem 0 5rem 0;
+      display: flex;
+      flex-direction: row-reverse;
+      // align-items: center;
+      // justify-content: flex-start;
 
-      img {
-        width: 110%;
+      .img-electrical {
+        position: relative;
+        z-index: -1;
+        width: 50%;
+        margin-right: 2rem;
+      }
+
+      .context {
+        position: relative;
+        z-index: 0;
+        width: 60vw;
+
+        .header {
+          font-size: 1.8rem;
+          background: $primary-color;
+          margin-right: 40%;
+          padding: 3rem 0.5rem 0.5rem 4rem;
+          text-align: end;
+          color: #fff;
+        }
+
+        .boxes {
+          position: relative;
+          top: 7%;
+          padding: 5rem 0;
+          display: flex;
+          margin: 2rem auto;
+
+          width: 60%;
+          min-width: 800px;
+          height: 50%;
+
+          .box {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background: $medium-text-color;
+            color: #fff;
+            padding: 5% 0;
+            text-align: center;
+            width: 100%;
+
+            // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+            &:nth-child(even) {
+              background: #fff;
+              color: $medium-text-color;
+            }
+
+            .content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 1rem;
+
+              margin: 0 0.5rem;
+
+              img {
+                width: 15%;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+
+        .logo-tech {
+          display: flex;
+          padding: 2rem;
+          justify-content: center;
+
+          i {
+            padding: 2rem;
+            color: $medium-text-color;
+          }
+        }
       }
     }
   }

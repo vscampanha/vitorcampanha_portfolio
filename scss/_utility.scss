@@ -5,6 +5,12 @@
   overflow: hidden;
 }
 
+.wrapper {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
 //Buttons
 .btn {
   background: #00c896;
@@ -57,4 +63,18 @@
 
 .text-semi-bold {
   font-weight: 600;
+}
+
+//text
+
+.lead {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.text {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 2rem;
 }
