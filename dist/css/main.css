@@ -1,7 +1,7 @@
 .container {
   max-width: 1564px;
   padding: 0 1.5rem;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden; }
 
 .wrapper {
@@ -98,7 +98,8 @@ ul {
     z-index: -1; }
     #header-home .green-background img {
       width: 100vw;
-      height: 80vh; }
+      height: 80vh;
+      min-height: 661px; }
   #header-home .navbar {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -125,16 +126,11 @@ ul {
             padding-bottom: 1rem;
             font-size: 1.2rem; }
   #header-home .context-home {
-    position: absolute;
-    bottom: 0;
     margin-left: 2rem;
-    width: 100%;
     overflow: hidden;
-    display: grid;
-    grid-template-areas: "text img" "text img" "social img"; }
+    display: flex; }
     #header-home .context-home .content-text {
-      grid-area: text;
-      margin-top: 20%; }
+      margin-top: 25vh; }
       #header-home .context-home .content-text .wrapper {
         display: flex;
         align-items: baseline;
@@ -154,7 +150,7 @@ ul {
           transition: padding 0.3s ease-in-out;
           max-height: 4rem; }
         #header-home .context-home .buttons-home .box:hover .btn-box {
-          padding: 3rem 9rem; }
+          padding: 3rem 8rem; }
       #header-home .context-home .buttons-home .btn-box {
         position: absolute;
         padding: 2.5rem 7.5rem;
@@ -170,7 +166,8 @@ ul {
           line-height: normal;
           font-size: 2.2rem; }
     #header-home .context-home .social {
-      grid-area: social;
+      position: absolute;
+      bottom: 0;
       align-self: end;
       padding: 0.5rem; }
       #header-home .context-home .social img {
@@ -178,12 +175,11 @@ ul {
         #header-home .context-home .social img:hover {
           opacity: 0.7; }
     #header-home .context-home .personal_image {
-      grid-area: img; }
-      #header-home .context-home .personal_image img {
-        margin-bottom: -0.4rem;
-        margin-right: 15rem;
-        width: 616px;
-        height: 780px; }
+      width: 70vh;
+      max-height: 750px;
+      position: absolute;
+      bottom: 0;
+      right: 10%; }
 
 #about {
   height: 70vh;
@@ -199,12 +195,13 @@ ul {
     padding: 0 5rem 0 5rem; }
     #about .about-text h1 {
       margin-bottom: 1rem;
-      font-size: 2.5rem; }
+      font-size: 2.5vw; }
     #about .about-text p {
       padding: 1rem 5rem 1rem 5rem;
-      border: 2px solid #00c896; }
+      border: 2px solid #00c896;
+      font-size: 2vmin; }
     #about .about-text .lead {
-      font-size: 1.5rem; }
+      font-size: 1.5rvw; }
     #about .about-text .context {
       background: #00c896; }
     #about .about-text .buttons-about {
@@ -218,7 +215,7 @@ ul {
         border: 2px solid #00c896;
         text-transform: uppercase;
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.3vw;
         padding: 0.5rem 0; }
         #about .about-text .buttons-about a:first-child {
           background: #fff;
@@ -313,8 +310,7 @@ ul {
       padding: 5rem 0;
       display: flex;
       margin: 2rem auto;
-      width: 60%;
-      min-width: 800px;
+      width: 80%;
       height: 50%; }
       #job-frontend .wrapper .context .boxes .box {
         display: flex;
@@ -333,7 +329,7 @@ ul {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding: 1rem;
+          padding: 5%;
           margin: 0 0.5rem; }
           #job-frontend .wrapper .context .boxes .box .content img {
             width: 15%;
