@@ -201,7 +201,7 @@ ul {
       border: 2px solid #00c896;
       font-size: 2vmin; }
     #about .about-text .lead {
-      font-size: 1.5rvw; }
+      font-size: 1.3vw; }
     #about .about-text .context {
       background: #00c896; }
     #about .about-text .buttons-about {
@@ -223,135 +223,144 @@ ul {
           margin-right: 1rem;
           width: 35%; }
 
-#job-electrical .wrapper {
-  margin: 5rem 0 5rem 0;
-  display: flex;
-  flex-direction: row-reverse; }
-  #job-electrical .wrapper .img-electrical {
-    position: relative;
-    z-index: -1;
-    width: 40%;
-    min-width: 500px;
-    margin-right: 1rem; }
-  #job-electrical .wrapper .context {
-    position: relative;
-    z-index: 0;
-    width: 60vw; }
-    #job-electrical .wrapper .context .header {
+#job-electrical {
+  height: 90vh; }
+  #job-electrical .wrapper {
+    margin: 5rem 0 5rem 0;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    #job-electrical .wrapper .header {
       background: blue;
-      font-size: 1.8rem;
+      font-size: 1.5vw;
       background: #00c896;
-      margin-right: 40%;
+      width: 35vw;
       padding: 3rem 0.5rem 0.5rem 4rem;
       text-align: end;
       color: #fff; }
-    #job-electrical .wrapper .context .boxes {
+    #job-electrical .wrapper-1 {
       position: relative;
-      top: 7%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      margin-top: 10%;
-      margin-left: 2rem;
-      width: 100%;
-      min-width: 800px; }
-      #job-electrical .wrapper .context .boxes .box {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        background: #2f4858;
-        color: #fff;
-        padding: 5% 0;
-        text-align: center;
-        width: 100%; }
-        #job-electrical .wrapper .context .boxes .box:nth-child(even) {
-          background: #fff;
-          color: #2f4858; }
-        #job-electrical .wrapper .context .boxes .box .content {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          padding: 1rem;
-          margin: 0 0.5rem; }
-          #job-electrical .wrapper .context .boxes .box .content img {
-            width: 15%;
-            margin: 0 auto; }
-    #job-electrical .wrapper .context .logo-tech {
+      top: -5rem;
       display: flex;
-      margin: 5rem 0 0 2rem;
-      padding: 2rem;
-      justify-content: center; }
-      #job-electrical .wrapper .context .logo-tech img {
+      justify-content: center;
+      align-items: center; }
+      #job-electrical .wrapper-1 .boxes {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-left: 2rem; }
+        #job-electrical .wrapper-1 .boxes .box {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          background: #fff;
+          color: #2f4858;
+          padding: 5% 0;
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+          #job-electrical .wrapper-1 .boxes .box:nth-child(even) {
+            background: #fff;
+            color: #2f4858; }
+          #job-electrical .wrapper-1 .boxes .box .content {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            margin: 0 auto; }
+            #job-electrical .wrapper-1 .boxes .box .content .lead {
+              font-size: 1vw;
+              margin: 0.5rem; }
+            #job-electrical .wrapper-1 .boxes .box .content .text {
+              font-size: 0.9vw; }
+            #job-electrical .wrapper-1 .boxes .box .content img {
+              width: 15%;
+              margin: 0.5rem auto; }
+    #job-electrical .wrapper .img-electrical {
+      position: relative;
+      left: -1%;
+      z-index: -1;
+      width: 40vw;
+      margin-right: 1rem; }
+    #job-electrical .wrapper .logo-tech {
+      position: relative;
+      top: -15rem;
+      width: 60vw;
+      display: flex;
+      justify-content: center;
+      padding: 0 2rem; }
+      #job-electrical .wrapper .logo-tech img {
+        width: 20%;
         margin: 0 1rem; }
 
-#job-frontend .wrapper {
-  margin: 5rem 0 0 0;
-  display: flex;
-  flex-direction: row-reverse; }
-  #job-frontend .wrapper .img-frontend {
-    position: relative;
-    z-index: -1;
-    width: 50%;
-    margin-right: 2rem; }
-  #job-frontend .wrapper .context {
-    position: relative;
-    z-index: 0;
-    width: 60vw; }
-    #job-frontend .wrapper .context .header {
-      font-size: 1.8rem;
+#job-frontend {
+  height: 90vh; }
+  #job-frontend .wrapper {
+    margin: 5rem 0 5rem 0;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    #job-frontend .wrapper .header {
+      background: blue;
+      font-size: 1.5vw;
       background: #00c896;
-      margin-right: 40%;
+      width: 35vw;
       padding: 3rem 0.5rem 0.5rem 4rem;
       text-align: end;
       color: #fff; }
-    #job-frontend .wrapper .context .boxes {
+    #job-frontend .wrapper-1 {
       position: relative;
-      top: 7%;
-      padding: 5rem 0;
+      top: -2rem;
       display: flex;
-      margin: 2rem auto;
-      width: 80%;
-      height: 50%; }
-      #job-frontend .wrapper .context .boxes .box {
+      justify-content: center;
+      align-items: center; }
+      #job-frontend .wrapper-1 .boxes {
+        position: relative;
         display: flex;
-        align-content: center;
+        margin-left: 2rem;
         justify-content: center;
-        background: #2f4858;
-        color: #fff;
-        padding: 5% 0;
-        text-align: center;
-        width: 100%; }
-        #job-frontend .wrapper .context .boxes .box:nth-child(even) {
-          background: #fff;
-          color: #2f4858; }
-        #job-frontend .wrapper .context .boxes .box .content {
+        width: 60vw; }
+        #job-frontend .wrapper-1 .boxes .box {
           display: flex;
-          flex-direction: column;
+          align-content: center;
           justify-content: center;
-          align-items: center;
-          padding: 5%;
-          margin: 0 0.5rem; }
-          #job-frontend .wrapper .context .boxes .box .content img {
-            width: 15%;
+          background: #fff;
+          color: #2f4858;
+          padding: 5% 0;
+          text-align: center;
+          width: 100%;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+          #job-frontend .wrapper-1 .boxes .box:nth-child(even) {
+            margin-left: 2rem; }
+          #job-frontend .wrapper-1 .boxes .box .content {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
             margin: 0 auto; }
-    #job-frontend .wrapper .context .logo-tech {
-      display: flex;
-      padding: 2rem;
-      justify-content: center; }
-      #job-frontend .wrapper .context .logo-tech i {
-        padding: 2rem;
+            #job-frontend .wrapper-1 .boxes .box .content .lead {
+              font-size: 1vw;
+              margin: 0.5rem; }
+            #job-frontend .wrapper-1 .boxes .box .content .text {
+              font-size: 0.9vw; }
+            #job-frontend .wrapper-1 .boxes .box .content img {
+              width: 15%;
+              margin: 0.5rem auto; }
+      #job-frontend .wrapper-1 .img-frontend {
+        position: relative;
+        left: -1%;
+        z-index: -1;
+        width: 80vw; }
+  #job-frontend .portfolio-btn {
+    display: flex;
+    justify-content: center; }
+    #job-frontend .portfolio-btn a {
+      text-align: center;
+      padding: 1rem;
+      cursor: pointer; }
+      #job-frontend .portfolio-btn a h1 {
+        font-weight: 800;
+        font-size: 1.2rem;
         color: #2f4858; }
-
-#job-frontend .portfolio-btn {
-  display: flex;
-  justify-content: center; }
-  #job-frontend .portfolio-btn a {
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer; }
-    #job-frontend .portfolio-btn a h1 {
-      font-weight: 800;
-      font-size: 1.2rem;
-      color: #2f4858; }
-      #job-frontend .portfolio-btn a h1:hover {
-        margin-bottom: 0.5rem; }
+        #job-frontend .portfolio-btn a h1:hover {
+          margin-bottom: 0.5rem; }

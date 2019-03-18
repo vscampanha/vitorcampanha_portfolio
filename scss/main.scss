@@ -216,7 +216,7 @@ ul {
     }
 
     .lead {
-      font-size: 1.5rvw;
+      font-size: 1.3vw;
     }
 
     .context {
@@ -252,56 +252,57 @@ ul {
 #job {
   //Eletrical Engineer
   &-electrical {
+    height: 90vh;
+
     .wrapper {
       margin: 5rem 0 5rem 0;
-      display: flex;
+      // display: flex;
       flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
 
-      .img-electrical {
-        position: relative;
-        z-index: -1;
-        width: 40%;
-        min-width: 500px;
-        margin-right: 1rem;
+      .header {
+        background: blue;
+        font-size: 1.5vw;
+        background: $primary-color;
+        width: 35vw;
+        padding: 3rem 0.5rem 0.5rem 4rem;
+        text-align: end;
+        color: #fff;
       }
 
-      .context {
+      &-1 {
         position: relative;
-        z-index: 0;
-        width: 60vw;
-
-        .header {
-          background: blue;
-          font-size: 1.8rem;
-          background: $primary-color;
-          margin-right: 40%;
-          padding: 3rem 0.5rem 0.5rem 4rem;
-          text-align: end;
-          color: #fff;
-        }
+        top: -5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // display: grid;
 
         .boxes {
           position: relative;
-          top: 7%;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          margin-top: 10%;
+          grid-gap: 2rem;
+
           margin-left: 2rem;
 
-          width: 100%;
-          min-width: 800px;
-
+          // width: 100%;
+          // min-width: 800px;
           .box {
             display: flex;
             align-content: center;
             justify-content: center;
-            background: $medium-text-color;
-            color: #fff;
+            // background: $medium-text-color;
+            // color: #fff;
+            background: #fff;
+            color: $medium-text-color;
             padding: 5% 0;
             text-align: center;
             width: 100%;
+            margin: 0;
 
-            // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
             &:nth-child(even) {
               background: #fff;
@@ -311,121 +312,150 @@ ul {
             .content {
               display: flex;
               flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              padding: 1rem;
+              padding: 5%;
 
-              margin: 0 0.5rem;
+              margin: 0 auto;
+
+              .lead {
+                font-size: 1vw;
+                margin: 0.5rem;
+              }
+
+              .text {
+                font-size: 0.9vw;
+              }
 
               img {
                 width: 15%;
-                margin: 0 auto;
+                margin: 0.5rem auto;
               }
             }
           }
         }
+      }
 
-        .logo-tech {
-          display: flex;
-          margin: 5rem 0 0 2rem;
-          padding: 2rem;
-          justify-content: center;
+      .img-electrical {
+        position: relative;
+        left: -1%;
+        z-index: -1;
+        width: 40vw;
+        // min-width: 500px;
+        margin-right: 1rem;
+      }
 
-          img {
-            margin: 0 1rem;
-          }
+      .logo-tech {
+        position: relative;
+        top: -15rem;
+        width: 60vw;
+
+        display: flex;
+        justify-content: center;
+        // margin: 5rem 0 0 2rem;
+        padding: 0 2rem;
+
+        img {
+          width: 20%;
+          margin: 0 1rem;
         }
       }
     }
   }
 
-  //Frontend
   &-frontend {
-    .wrapper {
-      margin: 5rem 0 0 0;
-      display: flex;
-      flex-direction: row-reverse;
-      // align-items: center;
-      // justify-content: flex-start;
+    height: 90vh;
 
-      .img-frontend {
-        position: relative;
-        z-index: -1;
-        width: 50%;
-        margin-right: 2rem;
+    .wrapper {
+      margin: 5rem 0 5rem 0;
+      // display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+
+      .header {
+        background: blue;
+        font-size: 1.5vw;
+        background: $primary-color;
+        width: 35vw;
+        padding: 3rem 0.5rem 0.5rem 4rem;
+        text-align: end;
+        color: #fff;
       }
 
-      .context {
+      &-1 {
         position: relative;
-        z-index: 0;
-        width: 60vw;
-
-        .header {
-          font-size: 1.8rem;
-          background: $primary-color;
-          margin-right: 40%;
-          padding: 3rem 0.5rem 0.5rem 4rem;
-          text-align: end;
-          color: #fff;
-        }
+        top: -2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // display: grid;
 
         .boxes {
           position: relative;
-          top: 7%;
-          padding: 5rem 0;
           display: flex;
-          margin: 2rem auto;
-
-          width: 80%;
-          height: 50%;
+          margin-left: 2rem;
+          justify-content: center;
+          width: 60vw;
 
           .box {
             display: flex;
             align-content: center;
             justify-content: center;
-            background: $medium-text-color;
-            color: #fff;
+            // background: $medium-text-color;
+            // color: #fff;
+            background: #fff;
+            color: $medium-text-color;
             padding: 5% 0;
             text-align: center;
             width: 100%;
 
-            // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
             &:nth-child(even) {
-              background: #fff;
-              color: $medium-text-color;
+              margin-left: 2rem;
             }
 
             .content {
               display: flex;
               flex-direction: column;
-              justify-content: center;
-              align-items: center;
               padding: 5%;
 
-              margin: 0 0.5rem;
+              margin: 0 auto;
+
+              .lead {
+                font-size: 1vw;
+                margin: 0.5rem;
+              }
+
+              .text {
+                font-size: 0.9vw;
+              }
 
               img {
                 width: 15%;
-                margin: 0 auto;
+                margin: 0.5rem auto;
               }
             }
           }
         }
-
-        .logo-tech {
-          display: flex;
-          padding: 2rem;
-          justify-content: center;
-
-          i {
-            padding: 2rem;
-            color: $medium-text-color;
-          }
+        .img-frontend {
+          position: relative;
+          left: -1%;
+          z-index: -1;
+          width: 80vw;
         }
       }
-    }
 
+      // .logo-tech {
+      //   background: blue;
+      //   position: relative;
+      //   top: -15rem;
+      //   width: 60vw;
+
+      //   display: flex;
+      //   justify-content: center;
+      //   padding: 0 2rem;
+      // }
+    }
     .portfolio-btn {
       display: flex;
       justify-content: center;
