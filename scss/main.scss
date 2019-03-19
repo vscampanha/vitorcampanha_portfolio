@@ -112,14 +112,19 @@ ul {
         margin-bottom: 2rem;
 
         span {
-          font-size: 1.5rem;
+          font-size: 2vmin;
+          text-transform: capitalize;
         }
 
         h1 {
           line-height: normal;
-          font-size: 48px;
+          font-size: 5vmin;
           text-transform: uppercase;
         }
+      }
+
+      h2 {
+        font-size: 2vmin;
       }
     }
 
@@ -144,7 +149,8 @@ ul {
 
       .btn-box {
         position: absolute;
-        padding: 2.5rem 7.5rem;
+        // padding: 2.5rem 7.5rem;
+        padding: 4vmin 12vmin;
         // padding: 4.5vh 6.5vw;
         background: $primary-color;
         z-index: -1;
@@ -159,7 +165,7 @@ ul {
         a {
           text-transform: uppercase;
           line-height: normal;
-          font-size: 2.2rem;
+          font-size: 3.5vmin;
         }
       }
     }
@@ -362,17 +368,12 @@ ul {
   }
 
   &-frontend {
-    height: 90vh;
+    // height: 100vh;
 
     .wrapper {
-      margin: 5rem 0 5rem 0;
-      // display: flex;
-      flex-direction: row-reverse;
-      justify-content: center;
-      align-items: center;
+      margin: 5rem 0 0 0;
 
       .header {
-        background: blue;
         font-size: 1.5vw;
         background: $primary-color;
         width: 35vw;
@@ -383,60 +384,79 @@ ul {
 
       &-1 {
         position: relative;
-        top: -2rem;
+        top: -4rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        // display: grid;
 
         .boxes {
           position: relative;
-          display: flex;
+          display: grid;
+          grid-template-rows: 1fr auto;
+          margin-top: 11rem;
           margin-left: 2rem;
           justify-content: center;
+          align-items: center;
           width: 60vw;
 
-          .box {
+          .logo-tech {
             display: flex;
-            align-content: center;
             justify-content: center;
-            // background: $medium-text-color;
-            // color: #fff;
-            background: #fff;
-            color: $medium-text-color;
-            padding: 5% 0;
-            text-align: center;
-            width: 100%;
-
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-
-            &:nth-child(even) {
-              margin-left: 2rem;
+            padding: 0 2rem;
+            margin-top: 2rem;
+            i {
+              color: $medium-text-color;
+              font-size: 4vw;
+              margin: 1.5rem;
             }
+          }
 
-            .content {
+          .container-box {
+            display: flex;
+
+            .box {
               display: flex;
-              flex-direction: column;
-              padding: 5%;
+              align-content: center;
+              justify-content: center;
+              // background: $medium-text-color;
+              // color: #fff;
+              background: #fff;
+              color: $medium-text-color;
+              padding: 5% 0;
+              text-align: center;
+              width: 100%;
 
-              margin: 0 auto;
+              box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
-              .lead {
-                font-size: 1vw;
-                margin: 0.5rem;
+              &:nth-child(even) {
+                margin-left: 2rem;
               }
 
-              .text {
-                font-size: 0.9vw;
-              }
+              .content {
+                display: flex;
+                flex-direction: column;
+                padding: 5%;
 
-              img {
-                width: 15%;
-                margin: 0.5rem auto;
+                margin: 0 auto;
+
+                .lead {
+                  font-size: 1vw;
+                  margin: 0.5rem;
+                }
+
+                .text {
+                  font-size: 0.9vw;
+                }
+
+                img {
+                  width: 15%;
+                  margin: 0.5rem auto;
+                }
               }
             }
           }
         }
+
         .img-frontend {
           position: relative;
           left: -1%;
@@ -444,21 +464,12 @@ ul {
           width: 80vw;
         }
       }
-
-      // .logo-tech {
-      //   background: blue;
-      //   position: relative;
-      //   top: -15rem;
-      //   width: 60vw;
-
-      //   display: flex;
-      //   justify-content: center;
-      //   padding: 0 2rem;
-      // }
     }
+
     .portfolio-btn {
       display: flex;
       justify-content: center;
+      margin-bottom: 1rem;
 
       a {
         text-align: center;
@@ -474,6 +485,37 @@ ul {
             margin-bottom: 0.5rem;
           }
         }
+      }
+    }
+  }
+}
+
+#portfolio {
+  background: #fff;
+  overflow: hidden;
+
+  .boxes {
+    display: flex;
+    margin: 5rem auto 3rem auto;
+    justify-content: center;
+  }
+
+  .btn-more {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    a {
+      border: 3px solid $primary-color;
+      background: #fff;
+      color: $primary-color;
+      font-weight: 700;
+      font-size: 2vmin;
+      margin-bottom: 5rem;
+
+      &:hover {
+        background: $primary-color;
+        color: #fff;
       }
     }
   }

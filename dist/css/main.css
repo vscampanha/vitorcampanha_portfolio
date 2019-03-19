@@ -136,11 +136,14 @@ ul {
         align-items: baseline;
         margin-bottom: 2rem; }
         #header-home .context-home .content-text .wrapper span {
-          font-size: 1.5rem; }
+          font-size: 2vmin;
+          text-transform: capitalize; }
         #header-home .context-home .content-text .wrapper h1 {
           line-height: normal;
-          font-size: 48px;
+          font-size: 5vmin;
           text-transform: uppercase; }
+      #header-home .context-home .content-text h2 {
+        font-size: 2vmin; }
     #header-home .context-home .buttons-home {
       margin-top: 2.5rem;
       display: flex; }
@@ -153,7 +156,7 @@ ul {
           padding: 3rem 8rem; }
       #header-home .context-home .buttons-home .btn-box {
         position: absolute;
-        padding: 2.5rem 7.5rem;
+        padding: 4vmin 12vmin;
         background: #00c896;
         z-index: -1; }
       #header-home .context-home .buttons-home .btn-header {
@@ -164,7 +167,7 @@ ul {
         #header-home .context-home .buttons-home .btn-header a {
           text-transform: uppercase;
           line-height: normal;
-          font-size: 2.2rem; }
+          font-size: 3.5vmin; }
     #header-home .context-home .social {
       position: absolute;
       bottom: 0;
@@ -294,34 +297,42 @@ ul {
         width: 20%;
         margin: 0 1rem; }
 
-#job-frontend {
-  height: 90vh; }
-  #job-frontend .wrapper {
-    margin: 5rem 0 5rem 0;
-    flex-direction: row-reverse;
+#job-frontend .wrapper {
+  margin: 5rem 0 0 0; }
+  #job-frontend .wrapper .header {
+    font-size: 1.5vw;
+    background: #00c896;
+    width: 35vw;
+    padding: 3rem 0.5rem 0.5rem 4rem;
+    text-align: end;
+    color: #fff; }
+  #job-frontend .wrapper-1 {
+    position: relative;
+    top: -4rem;
+    display: flex;
     justify-content: center;
     align-items: center; }
-    #job-frontend .wrapper .header {
-      background: blue;
-      font-size: 1.5vw;
-      background: #00c896;
-      width: 35vw;
-      padding: 3rem 0.5rem 0.5rem 4rem;
-      text-align: end;
-      color: #fff; }
-    #job-frontend .wrapper-1 {
+    #job-frontend .wrapper-1 .boxes {
       position: relative;
-      top: -2rem;
-      display: flex;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin-top: 11rem;
+      margin-left: 2rem;
       justify-content: center;
-      align-items: center; }
-      #job-frontend .wrapper-1 .boxes {
-        position: relative;
+      align-items: center;
+      width: 60vw; }
+      #job-frontend .wrapper-1 .boxes .logo-tech {
         display: flex;
-        margin-left: 2rem;
         justify-content: center;
-        width: 60vw; }
-        #job-frontend .wrapper-1 .boxes .box {
+        padding: 0 2rem;
+        margin-top: 2rem; }
+        #job-frontend .wrapper-1 .boxes .logo-tech i {
+          color: #2f4858;
+          font-size: 4vw;
+          margin: 1.5rem; }
+      #job-frontend .wrapper-1 .boxes .container-box {
+        display: flex; }
+        #job-frontend .wrapper-1 .boxes .container-box .box {
           display: flex;
           align-content: center;
           justify-content: center;
@@ -331,36 +342,60 @@ ul {
           text-align: center;
           width: 100%;
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
-          #job-frontend .wrapper-1 .boxes .box:nth-child(even) {
+          #job-frontend .wrapper-1 .boxes .container-box .box:nth-child(even) {
             margin-left: 2rem; }
-          #job-frontend .wrapper-1 .boxes .box .content {
+          #job-frontend .wrapper-1 .boxes .container-box .box .content {
             display: flex;
             flex-direction: column;
             padding: 5%;
             margin: 0 auto; }
-            #job-frontend .wrapper-1 .boxes .box .content .lead {
+            #job-frontend .wrapper-1 .boxes .container-box .box .content .lead {
               font-size: 1vw;
               margin: 0.5rem; }
-            #job-frontend .wrapper-1 .boxes .box .content .text {
+            #job-frontend .wrapper-1 .boxes .container-box .box .content .text {
               font-size: 0.9vw; }
-            #job-frontend .wrapper-1 .boxes .box .content img {
+            #job-frontend .wrapper-1 .boxes .container-box .box .content img {
               width: 15%;
               margin: 0.5rem auto; }
-      #job-frontend .wrapper-1 .img-frontend {
-        position: relative;
-        left: -1%;
-        z-index: -1;
-        width: 80vw; }
-  #job-frontend .portfolio-btn {
+    #job-frontend .wrapper-1 .img-frontend {
+      position: relative;
+      left: -1%;
+      z-index: -1;
+      width: 80vw; }
+
+#job-frontend .portfolio-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem; }
+  #job-frontend .portfolio-btn a {
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer; }
+    #job-frontend .portfolio-btn a h1 {
+      font-weight: 800;
+      font-size: 1.2rem;
+      color: #2f4858; }
+      #job-frontend .portfolio-btn a h1:hover {
+        margin-bottom: 0.5rem; }
+
+#portfolio {
+  background: #fff;
+  overflow: hidden; }
+  #portfolio .boxes {
+    display: flex;
+    margin: 5rem auto 3rem auto;
+    justify-content: center; }
+  #portfolio .btn-more {
+    width: 100vw;
     display: flex;
     justify-content: center; }
-    #job-frontend .portfolio-btn a {
-      text-align: center;
-      padding: 1rem;
-      cursor: pointer; }
-      #job-frontend .portfolio-btn a h1 {
-        font-weight: 800;
-        font-size: 1.2rem;
-        color: #2f4858; }
-        #job-frontend .portfolio-btn a h1:hover {
-          margin-bottom: 0.5rem; }
+    #portfolio .btn-more a {
+      border: 3px solid #00c896;
+      background: #fff;
+      color: #00c896;
+      font-weight: 700;
+      font-size: 2vmin;
+      margin-bottom: 5rem; }
+      #portfolio .btn-more a:hover {
+        background: #00c896;
+        color: #fff; }
