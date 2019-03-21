@@ -525,7 +525,7 @@ ul {
 #contact {
   display: flex;
   padding: 5rem 4rem;
-  margin: 1rem 5rem;
+  margin: 1rem 10rem;
   justify-content: center;
 
   .context {
@@ -533,7 +533,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    padding: 2rem 0;
+    padding: 2rem;
 
     h1 {
       color: $primary-color;
@@ -578,10 +578,43 @@ ul {
   form {
     background: #fff;
     border-radius: 2rem;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 10vw;
+    padding: 2rem;
+    width: 30vw;
+
+    .button {
+      background: #00c896;
+      border-radius: 28px;
+      padding: 0.8rem 3rem;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 1rem;
+      border: none;
+      border-bottom: 1px solid #d9eddf;
+      padding: 0.2rem;
+
+      &::placeholder {
+        color: #000;
+        text-transform: uppercase;
+      }
+    }
+
+    textarea {
+      padding: 0.2rem;
+      border: 1px solid #d9eddf;
+      margin-bottom: 1rem;
+
+      &::placeholder {
+        color: #000;
+        text-transform: capitalize;
+      }
+    }
   }
 }
