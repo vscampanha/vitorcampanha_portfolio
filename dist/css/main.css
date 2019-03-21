@@ -399,3 +399,46 @@ ul {
       #portfolio .btn-more a:hover {
         background: #00c896;
         color: #fff; }
+
+#contact {
+  display: flex;
+  padding: 5rem 4rem;
+  margin: 1rem 5rem;
+  justify-content: center; }
+  #contact .context {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 2rem 0; }
+    #contact .context h1 {
+      color: #00c896;
+      font-weight: 600;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem; }
+      #contact .context h1 span {
+        font-size: 2rem;
+        color: #000; }
+    #contact .context p {
+      font-weight: 500;
+      font-size: 1rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem; }
+    #contact .context .contact-me {
+      display: flex;
+      margin-bottom: 1rem; }
+      #contact .context .contact-me p {
+        margin: auto 1rem; }
+      #contact .context .contact-me img {
+        width: 46px; }
+    #contact .context .social a {
+      margin-right: 1rem; }
+  #contact form {
+    background: #fff;
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 10vw; }
