@@ -581,7 +581,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     width: 30vw;
 
     .button {
@@ -603,17 +603,25 @@ ul {
       &::placeholder {
         color: #000;
         text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: Montserrat;
       }
     }
 
     textarea {
       padding: 0.2rem;
-      border: 1px solid #d9eddf;
+      border: none;
+      border-bottom: 1px solid #d9eddf;
+      border-left: 1px solid #d9eddf;
       margin-bottom: 1rem;
 
       &::placeholder {
         color: #000;
-        text-transform: capitalize;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 600;
+        font-family: Montserrat;
       }
     }
   }
