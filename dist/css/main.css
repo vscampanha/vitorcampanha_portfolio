@@ -212,8 +212,7 @@ ul {
       justify-content: flex-start;
       margin-top: 1rem;
       width: 100%;
-      align-items: center;
-      justify-content: center; }
+      align-items: center; }
       #about .about-text .buttons-about a {
         border: 2px solid #00c896;
         text-transform: uppercase;
