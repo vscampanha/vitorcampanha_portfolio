@@ -78,10 +78,8 @@ ul {
   list-style: none; }
 
 .logo {
-  width: 214px;
-  height: 70px;
-  left: 180px;
-  top: 17px; }
+  width: 13rem;
+  height: 4.5rem; }
 
 #header-home {
   background: url("../img/Group.jpg") no-repeat center;
@@ -110,6 +108,8 @@ ul {
       align-items: center; }
       #header-home .navbar ul li {
         padding: 1rem 1.2rem; }
+        #header-home .navbar ul li:last-child {
+          padding-right: 0; }
         #header-home .navbar ul li a {
           font-size: 1rem;
           color: #fff;
@@ -182,7 +182,7 @@ ul {
       max-height: 750px;
       position: absolute;
       bottom: 0;
-      right: 10%; }
+      right: 10vw; }
 
 #about {
   height: 70vh;
@@ -472,3 +472,7 @@ ul {
         font-size: 0.9rem;
         font-weight: 600;
         font-family: Montserrat; }
+
+@media (max-height: 768px) {
+  #header-home .context-home .personal_image {
+    width: 65vh; } }

@@ -1,6 +1,5 @@
 @import "variables";
 @import "utility";
-@import "mobile";
 
 * {
   margin: 0;
@@ -26,10 +25,8 @@ ul {
 
 //Logo
 .logo {
-  width: 214px;
-  height: 70px;
-  left: 180px;
-  top: 17px;
+  width: 13rem;
+  height: 4.5rem;
 }
 
 //Home-Page
@@ -69,6 +66,10 @@ ul {
 
       li {
         padding: 1rem 1.2rem;
+
+        &:last-child {
+          padding-right: 0;
+        }
 
         a {
           font-size: 1rem;
@@ -190,7 +191,7 @@ ul {
       max-height: 750px;
       position: absolute;
       bottom: 0;
-      right: 10%;
+      right: 10vw;
     }
   }
 }
@@ -235,7 +236,6 @@ ul {
       margin-top: 1rem;
       width: 100%;
       align-items: center;
-
 
       a {
         border: 2px solid $primary-color;
@@ -626,3 +626,5 @@ ul {
     }
   }
 }
+
+@import "mobile";
