@@ -1,5 +1,201 @@
-@media (max-height: 768px) {
+@media (max-width: 1366px) {
   #header-home .context-home .personal_image {
-    width: 65vh;
+    right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  #header-home {
+    height: 60vh;
+
+    .green-background {
+      img {
+        height: 10vh;
+      }
+    }
+
+    .navbar {
+      display: grid;
+      grid-template-columns: 0.5fr 2fr;
+    }
+
+    .context-home {
+      .content-text {
+        margin-top: 15vh;
+        .wrapper {
+          h1 {
+            font-size: 4.5vmin;
+          }
+        }
+
+        h2 {
+          font-size: 2vmin;
+        }
+      }
+
+      .buttons-home {
+        .box {
+          margin-right: 10%;
+
+          .btn-box {
+            position: absolute;
+            padding: 3.5vmin 10vmin;
+          }
+        }
+
+        .btn-header {
+          a {
+            font-size: 3vmin;
+          }
+        }
+      }
+
+      .personal_image {
+        position: absolute;
+        right: 0;
+
+        img {
+          width: 10rem;
+        }
+      }
+    }
+  }
+
+  #about {
+    height: 30vh;
+
+    .about-text {
+      margin: 0;
+      padding: 0 25%;
+    }
+  }
+
+  #job-electrical .wrapper .logo-tech {
+    top: -11rem;
+  }
+
+  #job-frontend .wrapper-1 .img-frontend {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  #header-home {
+    height: 60vh;
+
+    .green-background {
+      img {
+        min-height: 50vh;
+      }
+    }
+
+    .navbar {
+      grid-template-columns: 0fr 2fr;
+
+      ul {
+        li {
+          padding: 1rem 1rem;
+          a {
+            font-size: 0.7rem;
+
+            &.btn {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+
+    .context-home {
+      .content-text {
+        margin-top: 10vh;
+      }
+
+      .personal_image {
+        position: absolute;
+        right: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  #about {
+    height: 35vh;
+
+    .about-text {
+      margin: 0;
+      padding: 0 25%;
+    }
+  }
+
+  #job-electrical {
+    .wrapper-1 {
+      top: -3rem;
+      .boxes {
+        grid-gap: 1rem;
+
+        .box {
+          .content {
+            img {
+              margin-bottom: 0;
+            }
+
+            .text {
+              margin: 0;
+              padding: 0 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .wrapper {
+      margin-top: 3rem;
+      height: 40vh;
+      .logo-tech {
+        top: -9rem;
+      }
+    }
+  }
+  #job-frontend .wrapper-1 {
+    top: -6rem;
+    .img-frontend {
+      left: -5%;
+    }
+    .boxes .container-box {
+      margin-left: 1rem;
+
+      .box {
+        &:nth-child(even) {
+          margin-left: 1rem;
+        }
+        .content {
+          img {
+            margin-bottom: 0;
+          }
+
+          .text {
+            margin: 0;
+            padding: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    padding: 0;
+    justify-content: left;
+    .context {
+      width: 100%;
+    }
+
+    form {
+      display: none;
+    }
   }
 }
