@@ -67,7 +67,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #d9eddf;
+  background: #fff;
   line-height: 1.5; }
 
 a {
@@ -94,6 +94,8 @@ ul {
     top: 0;
     left: -5%;
     z-index: -1; }
+    #header-home .green-background .phone_bg {
+      visibility: hidden; }
     #header-home .green-background img {
       width: 100vw;
       height: 80vh;
@@ -201,7 +203,7 @@ ul {
       font-size: 2.5vw; }
     #about .about-text p {
       padding: 1rem 5rem 1rem 5rem;
-      border: 2px solid #00c896;
+      border: 3px solid #00c896;
       font-size: 1.1vw; }
     #about .about-text .lead {
       font-size: 1.4vw; }
@@ -213,8 +215,10 @@ ul {
       margin-top: 1rem;
       width: 100%;
       align-items: center; }
+      #about .about-text .buttons-about img {
+        display: none; }
       #about .about-text .buttons-about a {
-        border: 2px solid #00c896;
+        border: 3px solid #00c896;
         text-transform: uppercase;
         width: 100%;
         font-size: 1.3vw;
@@ -225,157 +229,162 @@ ul {
           margin-right: 1rem;
           width: 35%; }
 
-#job-electrical .wrapper {
-  margin-top: 5rem;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center; }
-  #job-electrical .wrapper .header {
-    background: blue;
+#job-electrical {
+  background: #d9eddf; }
+  #job-electrical .wrapper {
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center; }
+    #job-electrical .wrapper .header {
+      background: blue;
+      font-size: 1.5vw;
+      background: #00c896;
+      width: 35vw;
+      padding: 3rem 0.5rem 0.5rem 4rem;
+      text-align: end;
+      color: #fff; }
+    #job-electrical .wrapper-1 {
+      position: relative;
+      top: -5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #job-electrical .wrapper-1 .boxes {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+        margin-left: 2rem; }
+        #job-electrical .wrapper-1 .boxes .box {
+          display: flex;
+          align-content: center;
+          justify-content: center;
+          background: #fff;
+          color: #2f4858;
+          padding: 5% 0;
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+          #job-electrical .wrapper-1 .boxes .box:nth-child(even) {
+            background: #fff;
+            color: #2f4858; }
+          #job-electrical .wrapper-1 .boxes .box .content {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            margin: 0 auto; }
+            #job-electrical .wrapper-1 .boxes .box .content .lead {
+              font-size: 1vw;
+              margin: 0.5rem; }
+            #job-electrical .wrapper-1 .boxes .box .content .text {
+              font-size: 0.9vw; }
+            #job-electrical .wrapper-1 .boxes .box .content img {
+              width: 15%;
+              margin: 0.5rem auto; }
+    #job-electrical .wrapper .img-electrical {
+      position: relative;
+      left: -1%;
+      z-index: 0;
+      width: 40vw;
+      margin-right: 1rem; }
+    #job-electrical .wrapper .logo-tech {
+      position: relative;
+      top: -15rem;
+      width: 60vw;
+      display: flex;
+      justify-content: center;
+      padding: 0 2rem; }
+      #job-electrical .wrapper .logo-tech img {
+        width: 20%;
+        margin: 0 1rem; }
+
+#job-frontend {
+  background: #d9eddf; }
+  #job-frontend .wrapper .header {
     font-size: 1.5vw;
     background: #00c896;
     width: 35vw;
     padding: 3rem 0.5rem 0.5rem 4rem;
     text-align: end;
     color: #fff; }
-  #job-electrical .wrapper-1 {
+  #job-frontend .wrapper-1 {
     position: relative;
-    top: -5rem;
+    top: -4rem;
     display: flex;
     justify-content: center;
     align-items: center; }
-    #job-electrical .wrapper-1 .boxes {
+    #job-frontend .wrapper-1 .boxes {
       position: relative;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
-      margin-left: 2rem; }
-      #job-electrical .wrapper-1 .boxes .box {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        background: #fff;
-        color: #2f4858;
-        padding: 5% 0;
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
-        #job-electrical .wrapper-1 .boxes .box:nth-child(even) {
-          background: #fff;
-          color: #2f4858; }
-        #job-electrical .wrapper-1 .boxes .box .content {
-          display: flex;
-          flex-direction: column;
-          padding: 5%;
-          margin: 0 auto; }
-          #job-electrical .wrapper-1 .boxes .box .content .lead {
-            font-size: 1vw;
-            margin: 0.5rem; }
-          #job-electrical .wrapper-1 .boxes .box .content .text {
-            font-size: 0.9vw; }
-          #job-electrical .wrapper-1 .boxes .box .content img {
-            width: 15%;
-            margin: 0.5rem auto; }
-  #job-electrical .wrapper .img-electrical {
-    position: relative;
-    left: -1%;
-    z-index: -1;
-    width: 40vw;
-    margin-right: 1rem; }
-  #job-electrical .wrapper .logo-tech {
-    position: relative;
-    top: -15rem;
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    padding: 0 2rem; }
-    #job-electrical .wrapper .logo-tech img {
-      width: 20%;
-      margin: 0 1rem; }
-
-#job-frontend .wrapper .header {
-  font-size: 1.5vw;
-  background: #00c896;
-  width: 35vw;
-  padding: 3rem 0.5rem 0.5rem 4rem;
-  text-align: end;
-  color: #fff; }
-
-#job-frontend .wrapper-1 {
-  position: relative;
-  top: -4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  #job-frontend .wrapper-1 .boxes {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    margin-top: 11rem;
-    margin-left: 2rem;
-    justify-content: center;
-    align-items: center;
-    width: 60vw; }
-    #job-frontend .wrapper-1 .boxes .logo-tech {
-      display: flex;
+      grid-template-rows: 1fr auto;
+      margin-top: 11rem;
+      margin-left: 2rem;
       justify-content: center;
-      padding: 0 2rem;
-      margin-top: 2rem; }
-      #job-frontend .wrapper-1 .boxes .logo-tech i {
-        color: #2f4858;
-        font-size: 4vw;
-        margin: 1.5rem; }
-    #job-frontend .wrapper-1 .boxes .container-box {
-      display: flex; }
-      #job-frontend .wrapper-1 .boxes .container-box .box {
+      align-items: center;
+      width: 60vw; }
+      #job-frontend .wrapper-1 .boxes .logo-tech {
         display: flex;
-        align-content: center;
         justify-content: center;
-        background: #fff;
-        color: #2f4858;
-        padding: 5% 0;
-        text-align: center;
-        width: 100%;
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
-        #job-frontend .wrapper-1 .boxes .container-box .box:nth-child(even) {
-          margin-left: 2rem; }
-        #job-frontend .wrapper-1 .boxes .container-box .box .content {
+        padding: 0 2rem;
+        margin-top: 2rem; }
+        #job-frontend .wrapper-1 .boxes .logo-tech i {
+          color: #2f4858;
+          font-size: 4vw;
+          margin: 1.5rem; }
+      #job-frontend .wrapper-1 .boxes .container-box {
+        display: flex;
+        position: relative;
+        z-index: 1; }
+        #job-frontend .wrapper-1 .boxes .container-box .box {
           display: flex;
-          flex-direction: column;
-          padding: 5%;
-          margin: 0 auto; }
-          #job-frontend .wrapper-1 .boxes .container-box .box .content .lead {
-            font-size: 1vw;
-            margin: 0.5rem; }
-          #job-frontend .wrapper-1 .boxes .container-box .box .content .text {
-            font-size: 0.9vw; }
-          #job-frontend .wrapper-1 .boxes .container-box .box .content img {
-            width: 15%;
-            margin: 0.5rem auto; }
-  #job-frontend .wrapper-1 .img-frontend {
-    position: relative;
-    left: -1%;
-    z-index: -1;
-    width: 80vw; }
-  #job-frontend .wrapper-1 .portfolio-btn {
-    flex-direction: row; }
-
-#job-frontend .portfolio-btn {
-  display: flex;
-  display: none;
-  justify-content: center;
-  margin-bottom: 1rem; }
-  #job-frontend .portfolio-btn a {
-    text-align: center;
-    padding: 1rem;
-    cursor: pointer; }
-    #job-frontend .portfolio-btn a h1 {
-      font-weight: 800;
-      font-size: 1.2rem;
-      color: #2f4858; }
-      #job-frontend .portfolio-btn a h1:hover {
-        margin-bottom: 0.5rem; }
+          align-content: center;
+          justify-content: center;
+          background: #fff;
+          color: #2f4858;
+          padding: 5% 0;
+          text-align: center;
+          width: 100%;
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
+          #job-frontend .wrapper-1 .boxes .container-box .box:nth-child(even) {
+            margin-left: 2rem; }
+          #job-frontend .wrapper-1 .boxes .container-box .box .content {
+            display: flex;
+            flex-direction: column;
+            padding: 5%;
+            margin: 0 auto; }
+            #job-frontend .wrapper-1 .boxes .container-box .box .content .lead {
+              font-size: 1vw;
+              margin: 0.5rem; }
+            #job-frontend .wrapper-1 .boxes .container-box .box .content .text {
+              font-size: 0.9vw; }
+            #job-frontend .wrapper-1 .boxes .container-box .box .content img {
+              width: 15%;
+              margin: 0.5rem auto; }
+    #job-frontend .wrapper-1 .img-frontend {
+      position: relative;
+      left: -1%;
+      z-index: 0;
+      width: 80vw; }
+    #job-frontend .wrapper-1 .portfolio-btn {
+      flex-direction: row; }
+  #job-frontend .portfolio-btn {
+    display: flex;
+    display: none;
+    justify-content: center;
+    margin-bottom: 1rem; }
+    #job-frontend .portfolio-btn a {
+      text-align: center;
+      padding: 1rem;
+      cursor: pointer; }
+      #job-frontend .portfolio-btn a h1 {
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: #2f4858; }
+        #job-frontend .portfolio-btn a h1:hover {
+          margin-bottom: 0.5rem; }
 
 #portfolio {
   background: #fff;
@@ -404,7 +413,8 @@ ul {
   display: flex;
   padding: 5rem 4rem;
   margin: 1rem 5%;
-  justify-content: center; }
+  justify-content: center;
+  background: #d9eddf; }
   #contact .context {
     width: 50vw;
     display: flex;
@@ -575,3 +585,114 @@ ul {
       width: 100%; }
     #contact form {
       display: none; } }
+
+@media (max-width: 414px) {
+  .logo {
+    width: 159px;
+    height: 52px; }
+  #header-home {
+    height: 100vh; }
+    #header-home .green-background {
+      left: 0; }
+      #header-home .green-background .laptop_bg {
+        visibility: hidden; }
+      #header-home .green-background .phone_bg {
+        position: absolute;
+        top: 0;
+        height: 65vh;
+        width: 100vw;
+        visibility: visible; }
+    #header-home .navbar ul {
+      visibility: hidden; }
+    #header-home .context-home {
+      margin: 0; }
+      #header-home .context-home .content-text {
+        margin-top: 30%; }
+        #header-home .context-home .content-text .wrapper {
+          margin-bottom: 0.5rem; }
+          #header-home .context-home .content-text .wrapper h1 {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.8rem; }
+            #header-home .context-home .content-text .wrapper h1 span {
+              margin-bottom: 0.5rem;
+              font-size: 0.7rem; }
+        #header-home .context-home .content-text h2 {
+          font-size: 0.8rem; }
+      #header-home .context-home .buttons-home {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        margin-top: 15vh; }
+        #header-home .context-home .buttons-home .box {
+          margin-right: 10%;
+          margin-bottom: 2rem; }
+          #header-home .context-home .buttons-home .box:hover .btn-box {
+            padding: 2.5rem 6rem; }
+          #header-home .context-home .buttons-home .box .btn-box {
+            position: absolute;
+            padding: 2.5rem 6rem; }
+        #header-home .context-home .buttons-home .btn-header a {
+          font-size: 1.5rem; }
+      #header-home .context-home .personal_image {
+        visibility: hidden; }
+  #about {
+    height: 60vh; }
+    #about .about-text {
+      margin: 5% 0;
+      padding: 0; }
+      #about .about-text h1 {
+        margin-bottom: 0rem;
+        font-size: 1.5rem; }
+      #about .about-text p {
+        padding: 1rem 2rem;
+        font-size: 0.7rem; }
+      #about .about-text .lead {
+        font-size: 0.8rem; }
+      #about .about-text .context {
+        background: #00c896; }
+      #about .about-text .buttons-about {
+        display: grid;
+        grid-template-areas: "button img";
+        align-items: center;
+        justify-content: center;
+        margin: 0; }
+        #about .about-text .buttons-about img {
+          grid-area: img;
+          position: relative;
+          bottom: 0;
+          right: 0;
+          width: 10rem;
+          display: inline-block;
+          width: 146px;
+          height: 185px; }
+        #about .about-text .buttons-about .contact-btn {
+          display: flex;
+          flex-direction: column;
+          grid-area: button; }
+        #about .about-text .buttons-about a {
+          width: 50vw;
+          font-size: 1rem; }
+          #about .about-text .buttons-about a:first-child {
+            width: 50vw; }
+  #job-electrical .wrapper {
+    margin: 0;
+    padding-top: 1rem; }
+    #job-electrical .wrapper .header {
+      font-size: 1.2rem;
+      background: #00c896;
+      width: 70vw;
+      padding: 0.5rem 1rem 0.1rem 1rem;
+      text-align: start;
+      color: #fff;
+      margin-bottom: 2rem; }
+    #job-electrical .wrapper .wrapper-1 {
+      top: 0; }
+      #job-electrical .wrapper .wrapper-1 .boxes {
+        grid-gap: 1rem; }
+        #job-electrical .wrapper .wrapper-1 .boxes .box .content img {
+          margin-bottom: 0; }
+        #job-electrical .wrapper .wrapper-1 .boxes .box .content .text {
+          margin: 0;
+          padding: 0 0.5rem; }
+      #job-electrical .wrapper .wrapper-1 img:last-child {
+        display: none; } }
