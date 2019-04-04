@@ -10,7 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: #fff;
+  background: $secondary-color;
   line-height: 1.5;
 }
 
@@ -243,18 +243,23 @@ ul {
         display: none;
       }
 
-      a {
-        border: 3px solid $primary-color;
-        text-transform: uppercase;
+      .contact-btn {
         width: 100%;
-        font-size: 1.3vw;
-        padding: 0.5rem 0;
+        display: flex;
 
-        &:first-child {
-          background: #fff;
-          color: $primary-color;
-          margin-right: 1rem;
-          width: 35%;
+        a {
+          border: 3px solid $primary-color;
+          text-transform: uppercase;
+          width: 100%;
+          font-size: 1.3vw;
+          padding: 0.5rem 0;
+
+          &:first-child {
+            background: #fff;
+            color: $primary-color;
+            margin-right: 1rem;
+            width: 35%;
+          }
         }
       }
     }
@@ -265,6 +270,7 @@ ul {
   //Eletrical Engineer
   &-electrical {
     background: $secondary-color;
+
     .wrapper {
       margin-top: 5rem;
       flex-direction: row-reverse;
@@ -272,7 +278,6 @@ ul {
       align-items: center;
 
       .header {
-        background: blue;
         font-size: 1.5vw;
         background: $primary-color;
         width: 35vw;
@@ -290,7 +295,6 @@ ul {
 
         .boxes {
           position: relative;
-
           z-index: 1;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -346,7 +350,9 @@ ul {
         left: -1%;
         z-index: 0;
         width: 40vw;
+        // min-width: 500px;
         margin-right: 1rem;
+        display: block;
       }
 
       .logo-tech {
@@ -368,8 +374,8 @@ ul {
   }
 
   &-frontend {
-    // height: 100vh;
     background: $secondary-color;
+
     .wrapper {
       .header {
         font-size: 1.5vw;
@@ -388,6 +394,7 @@ ul {
         align-items: center;
 
         .boxes {
+          z-index: 1;
           position: relative;
           display: grid;
           grid-template-rows: 1fr auto;
@@ -411,8 +418,6 @@ ul {
 
           .container-box {
             display: flex;
-            position: relative;
-            z-index: 1;
 
             .box {
               display: flex;
@@ -531,7 +536,6 @@ ul {
   padding: 5rem 4rem;
   margin: 1rem 5%;
   justify-content: center;
-  background: $secondary-color;
 
   .context {
     width: 50vw;
