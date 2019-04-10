@@ -364,7 +364,6 @@
           background: $primary-color;
           width: 70vw;
           padding: 0.5rem 1rem 0.1rem 1rem;
-          text-align: start;
           color: #fff;
           margin-bottom: 2rem;
         }
@@ -374,21 +373,30 @@
         }
         .wrapper-1 {
           top: 0;
+          margin-left: 0;
 
           overflow-x: scroll;
           scroll-snap-type: x proximity;
 
           .boxes {
-            margin-left: 60%;
+            position: relative;
+            left: 20vw;
+
             margin-bottom: 5%;
+            margin-left: 0;
             grid-gap: 1rem;
-            grid-template-columns: repeat(3, 50%);
+            // grid-template-columns: repeat(3, 50%);
             width: 100vw;
 
             .box {
-              padding: 10% 5%;
+              height: 220px;
+              width: 210px;
+              padding: 0;
 
               .content {
+                margin: auto;
+                padding: 0;
+
                 img {
                   width: 20%;
                   margin-bottom: 0;
@@ -429,7 +437,6 @@
           background: $primary-color;
           width: 70vw;
           padding: 0.5rem 1rem 0.1rem 1rem;
-          text-align: start;
           color: #fff;
           margin-bottom: 2rem;
         }
@@ -439,6 +446,7 @@
 
           overflow-x: scroll;
           scroll-snap-type: x proximity;
+
           .boxes {
             margin-bottom: 10%;
             margin-top: 0;
@@ -451,11 +459,16 @@
             }
 
             .container-box {
-              display: grid;
-              grid-template-columns: repeat(2, 50%);
+              position: relative;
+              left: 20vw;
+
+              // display: grid;
+              // grid-template-columns: repeat(2, 50%);
 
               .box {
                 height: 220px;
+                width: 210px;
+
                 .content {
                   padding: 0 5%;
                   margin: auto;
@@ -485,6 +498,53 @@
       .img-frontend {
         display: none;
       }
+    }
+  }
+
+  #contact {
+    padding: 0;
+    justify-content: left;
+
+    .context {
+      width: 100%;
+
+      h1 {
+        font-size: 6vw;
+        span {
+          font-size: 6vw;
+        }
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .social {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        .contact-me {
+          margin-bottom: 0;
+          img {
+            margin-right: 1rem;
+            width: 10vw;
+          }
+          p {
+            display: none;
+          }
+        }
+
+        .contact-social {
+          a {
+            width: 10vw;
+          }
+        }
+      }
+    }
+
+    form {
+      display: none;
     }
   }
 }

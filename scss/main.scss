@@ -564,22 +564,33 @@ ul {
       margin-bottom: 1rem;
     }
 
-    .contact-me {
-      display: flex;
-      margin-bottom: 1rem;
-
-      p {
-        margin: auto 1rem;
-      }
-
-      img {
-        width: 46px;
-      }
-    }
-
     .social {
-      a {
-        margin-right: 1rem;
+      display: grid;
+      grid-template-areas:
+        "contact"
+        "social";
+
+      .contact-me {
+        grid-area: "contact";
+        display: flex;
+
+        margin-bottom: 1rem;
+
+        p {
+          margin: auto 1rem;
+        }
+
+        img {
+          width: 3rem;
+        }
+      }
+
+      .contact-social {
+        grid-area: "social";
+
+        a {
+          margin-right: 1rem;
+        }
       }
     }
   }

@@ -436,15 +436,21 @@ ul {
       font-size: 1rem;
       text-transform: capitalize;
       margin-bottom: 1rem; }
-    #contact .context .contact-me {
-      display: flex;
-      margin-bottom: 1rem; }
-      #contact .context .contact-me p {
-        margin: auto 1rem; }
-      #contact .context .contact-me img {
-        width: 46px; }
-    #contact .context .social a {
-      margin-right: 1rem; }
+    #contact .context .social {
+      display: grid;
+      grid-template-areas: "contact" "social"; }
+      #contact .context .social .contact-me {
+        grid-area: "contact";
+        display: flex;
+        margin-bottom: 1rem; }
+        #contact .context .social .contact-me p {
+          margin: auto 1rem; }
+        #contact .context .social .contact-me img {
+          width: 3rem; }
+      #contact .context .social .contact-social {
+        grid-area: "social"; }
+        #contact .context .social .contact-social a {
+          margin-right: 1rem; }
   #contact form {
     background: #fff;
     border-radius: 2rem;
@@ -684,33 +690,39 @@ ul {
       background: #00c896;
       width: 70vw;
       padding: 0.5rem 1rem 0.1rem 1rem;
-      text-align: start;
       color: #fff;
       margin-bottom: 2rem; }
     #job-electrical .wrapper .logo-tech {
       display: none; }
     #job-electrical .wrapper .wrapper-1 {
       top: 0;
+      margin-left: 0;
       overflow-x: scroll;
       scroll-snap-type: x proximity; }
       #job-electrical .wrapper .wrapper-1 .boxes {
-        margin-left: 60%;
+        position: relative;
+        left: 20vw;
         margin-bottom: 5%;
+        margin-left: 0;
         grid-gap: 1rem;
-        grid-template-columns: repeat(3, 50%);
         width: 100vw; }
         #job-electrical .wrapper .wrapper-1 .boxes .box {
-          padding: 10% 5%; }
-          #job-electrical .wrapper .wrapper-1 .boxes .box .content img {
-            width: 20%;
-            margin-bottom: 0; }
-          #job-electrical .wrapper .wrapper-1 .boxes .box .content .lead {
-            font-size: 0.8rem;
-            margin: 0.5rem 0; }
-          #job-electrical .wrapper .wrapper-1 .boxes .box .content .text {
-            font-size: 0.7rem; }
-          #job-electrical .wrapper .wrapper-1 .boxes .box .content .text {
-            padding: 0 0.5rem; }
+          height: 220px;
+          width: 210px;
+          padding: 0; }
+          #job-electrical .wrapper .wrapper-1 .boxes .box .content {
+            margin: auto;
+            padding: 0; }
+            #job-electrical .wrapper .wrapper-1 .boxes .box .content img {
+              width: 20%;
+              margin-bottom: 0; }
+            #job-electrical .wrapper .wrapper-1 .boxes .box .content .lead {
+              font-size: 0.8rem;
+              margin: 0.5rem 0; }
+            #job-electrical .wrapper .wrapper-1 .boxes .box .content .text {
+              font-size: 0.7rem; }
+            #job-electrical .wrapper .wrapper-1 .boxes .box .content .text {
+              padding: 0 0.5rem; }
       #job-electrical .wrapper .wrapper-1 img:last-child {
         display: none; }
   #job-frontend .wrapper {
@@ -723,7 +735,6 @@ ul {
       background: #00c896;
       width: 70vw;
       padding: 0.5rem 1rem 0.1rem 1rem;
-      text-align: start;
       color: #fff;
       margin-bottom: 2rem; }
     #job-frontend .wrapper .wrapper-1 {
@@ -739,10 +750,11 @@ ul {
         #job-frontend .wrapper .wrapper-1 .boxes .logo-tech {
           display: none; }
         #job-frontend .wrapper .wrapper-1 .boxes .container-box {
-          display: grid;
-          grid-template-columns: repeat(2, 50%); }
+          position: relative;
+          left: 20vw; }
           #job-frontend .wrapper .wrapper-1 .boxes .container-box .box {
-            height: 220px; }
+            height: 220px;
+            width: 210px; }
             #job-frontend .wrapper .wrapper-1 .boxes .container-box .box .content {
               padding: 0 5%;
               margin: auto; }
@@ -757,4 +769,30 @@ ul {
               #job-frontend .wrapper .wrapper-1 .boxes .container-box .box .content .text {
                 padding: 0 0.5rem; }
   #job-frontend .img-frontend {
-    display: none; } }
+    display: none; }
+  #contact {
+    padding: 0;
+    justify-content: left; }
+    #contact .context {
+      width: 100%; }
+      #contact .context h1 {
+        font-size: 6vw; }
+        #contact .context h1 span {
+          font-size: 6vw; }
+      #contact .context p {
+        font-size: 0.8rem; }
+      #contact .context .social {
+        display: flex;
+        justify-content: start;
+        align-items: center; }
+        #contact .context .social .contact-me {
+          margin-bottom: 0; }
+          #contact .context .social .contact-me img {
+            margin-right: 1rem;
+            width: 10vw; }
+          #contact .context .social .contact-me p {
+            display: none; }
+        #contact .context .social .contact-social a {
+          width: 10vw; }
+    #contact form {
+      display: none; } }
