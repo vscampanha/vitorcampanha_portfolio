@@ -113,7 +113,7 @@ ul {
         #header-home .navbar ul li:last-child {
           padding-right: 0; }
         #header-home .navbar ul li a {
-          font-size: 1rem;
+          font-size: 1vw;
           color: #fff;
           text-transform: uppercase;
           border-bottom: 3px transparent solid;
@@ -126,7 +126,7 @@ ul {
           #header-home .navbar ul li a.btn {
             border-bottom: 0;
             padding-bottom: 1rem;
-            font-size: 1.2rem; }
+            font-size: 1.2vw; }
   #header-home .context-home {
     margin-left: 2rem;
     overflow: hidden;
@@ -180,11 +180,11 @@ ul {
         #header-home .context-home .social img:hover {
           opacity: 0.7; }
     #header-home .context-home .personal_image {
-      width: 50%;
-      height: 80vh;
       position: absolute;
       bottom: 0;
-      right: 0vw; }
+      width: 50%;
+      height: 80%;
+      right: 0; }
 
 #about {
   height: 70vh;
@@ -383,7 +383,7 @@ ul {
       cursor: pointer; }
       #job-frontend .portfolio-btn a h1 {
         font-weight: 800;
-        font-size: 1.2rem;
+        font-size: 1.2vw;
         color: #2f4858; }
         #job-frontend .portfolio-btn a h1:hover {
           margin-bottom: 0.5rem; }
@@ -425,15 +425,15 @@ ul {
     #contact .context h1 {
       color: #00c896;
       font-weight: 600;
-      font-size: 2rem;
+      font-size: 2vw;
       text-transform: capitalize;
       margin-bottom: 1rem; }
       #contact .context h1 span {
-        font-size: 2rem;
+        font-size: 2vw;
         color: #000; }
     #contact .context p {
       font-weight: 500;
-      font-size: 1rem;
+      font-size: 1vw;
       text-transform: capitalize;
       margin-bottom: 1rem; }
     #contact .context .social {
@@ -469,7 +469,7 @@ ul {
       border-radius: 28px;
       padding: 0.8rem 3rem;
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.1vw;
       font-weight: 800; }
     #contact form input {
       width: 100%;
@@ -480,7 +480,7 @@ ul {
       #contact form input::placeholder {
         color: #000;
         text-transform: uppercase;
-        font-size: 0.9rem;
+        font-size: 0.7vw;
         font-weight: 600;
         font-family: Montserrat; }
     #contact form textarea {
@@ -492,7 +492,7 @@ ul {
       #contact form textarea::placeholder {
         color: #000;
         text-transform: uppercase;
-        font-size: 0.9rem;
+        font-size: 0.7vw;
         font-weight: 600;
         font-family: Montserrat; }
 
@@ -558,14 +558,17 @@ ul {
   .context .social .contact-me {
     flex-direction: column; } }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .logo {
     width: 8rem;
     height: 3rem; }
   #header-home {
     height: 60vh; }
     #header-home .green-background img {
-      min-height: 50vh; }
+      height: 50vh;
+      min-height: 0px; }
+    #header-home .phone_bg {
+      display: none; }
     #header-home .navbar {
       grid-template-columns: 0fr 2fr; }
       #header-home .navbar ul li {
@@ -576,15 +579,21 @@ ul {
             font-size: 0.9rem; }
     #header-home .context-home .content-text {
       margin-top: 10vh; }
-    #header-home .context-home .personal_image {
-      position: absolute;
-      right: 0;
-      width: 50%; }
+      #header-home .context-home .content-text .wrapper h1 {
+        font-size: 4vw; }
+      #header-home .context-home .content-text .buttons-home .box .btn-box {
+        transition: none; }
+      #header-home .context-home .content-text .buttons-home .box:hover .btn-box {
+        padding: 4vmin 12vmin; }
+      #header-home .context-home .content-text .buttons-home .box .btn-header a {
+        font-size: 3vmin; }
   #about {
     height: 35vh; }
     #about .about-text {
       margin: 0;
       padding: 0 25%; }
+      #about .about-text p {
+        padding: 3% 5%; }
   #job-electrical .wrapper-1 {
     top: -3rem; }
     #job-electrical .wrapper-1 .boxes {
@@ -620,7 +629,7 @@ ul {
     #contact form {
       display: none; } }
 
-@media (max-width: 414px) {
+@media (max-width: 650px) {
   body {
     background: #fff; }
   .logo {
