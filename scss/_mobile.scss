@@ -128,12 +128,20 @@
     }
   }
 
+  #job-electrical .wrapper-1 .boxes {
+    grid-gap: 1rem;
+  }
+
   #job-electrical .wrapper .logo-tech {
     top: -11rem;
   }
 
   #job-frontend .wrapper-1 .img-frontend {
     width: 60vw;
+  }
+
+  #job-frontend .wrapper-1 .boxes .container-box .box {
+    margin-left: 1rem;
   }
 
   .context {
@@ -147,7 +155,7 @@
 
 //IPAD******************************
 
-@media (min-width: 768px) {
+@media (max-width: 768px) and (min-height: 900px) {
   .logo {
     width: 8rem;
     height: 3rem;
@@ -299,7 +307,7 @@
 
 //Smartphone*********************************************
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   body {
     background: #fff;
   }
@@ -321,8 +329,9 @@
       .phone_bg {
         position: absolute;
         top: 0;
-        height: 65vh;
+        // height: 60vh;
         width: 100vw;
+        min-height: none;
 
         visibility: visible;
       }
@@ -336,8 +345,10 @@
 
     .context-home {
       margin: 0;
+      margin-top: 20%;
+
       .content-text {
-        margin-top: 30%;
+        margin: 0;
         .wrapper {
           margin-bottom: 0.5rem;
 
@@ -354,14 +365,17 @@
         }
 
         h2 {
-          font-size: 0.8rem;
+          font-size: 1rem;
+          br {
+            display: none;
+          }
         }
       }
 
       .buttons-home {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        margin-top: 15vh;
+        margin-top: 15%;
 
         .box {
           margin-right: 10%;
@@ -392,7 +406,7 @@
   }
 
   #about {
-    height: 60vh;
+    height: 100%;
     margin-top: 2rem;
 
     .about-text {
@@ -421,6 +435,7 @@
         align-items: center;
         justify-content: center;
         margin: 0;
+        margin-top: 1rem;
 
         img {
           position: relative;
@@ -453,7 +468,7 @@
   #job {
     &-electrical {
       .wrapper {
-        height: 45vh;
+        height: 100%;
         margin: 0;
         padding-top: 1rem;
 
@@ -478,13 +493,18 @@
 
           .boxes {
             position: relative;
-            left: 20vw;
+
+            grid-template-columns: repeat(5, 1fr);
 
             margin-bottom: 5%;
             margin-left: 0;
             grid-gap: 1rem;
-            // grid-template-columns: repeat(3, 50%);
             width: 100vw;
+
+            .empty {
+              width: 20vw;
+              display: inline-block;
+            }
 
             .box {
               height: 220px;
@@ -525,7 +545,7 @@
 
     &-frontend {
       .wrapper {
-        height: 45vh;
+        height: 100%;
         margin: 0;
         padding-top: 1rem;
         background: $secondary-color;
@@ -551,21 +571,29 @@
             margin-left: 0;
             width: 100%;
             margin-bottom: 5%;
+            display: inline-block;
+
+            .empty {
+              width: 20vw;
+              display: inline-block;
+            }
 
             .logo-tech {
               display: none;
             }
 
             .container-box {
-              position: relative;
-              left: 20vw;
+              // position: relative;
+              // left: 20vw;
 
-              // display: grid;
-              // grid-template-columns: repeat(2, 50%);
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              grid-gap: 1rem;
 
               .box {
                 height: 220px;
                 width: 210px;
+                margin-left: 0;
 
                 .content {
                   padding: 0 5%;
@@ -600,8 +628,10 @@
   }
 
   #contact {
+    margin: 0;
     padding: 0;
     justify-content: left;
+    background: $secondary-color;
 
     .context {
       width: 100%;
@@ -625,6 +655,7 @@
 
         .contact-me {
           margin: 0;
+          flex-direction: row;
           img {
             margin-right: 1rem;
           }

@@ -259,6 +259,8 @@ ul {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         margin-left: 2rem; }
+        #job-electrical .wrapper-1 .boxes .empty {
+          display: none; }
         #job-electrical .wrapper-1 .boxes .box {
           display: flex;
           align-content: center;
@@ -340,6 +342,8 @@ ul {
           margin: 1.5rem; }
       #job-frontend .wrapper-1 .boxes .container-box {
         display: flex; }
+        #job-frontend .wrapper-1 .boxes .container-box .empty {
+          display: none; }
         #job-frontend .wrapper-1 .boxes .container-box .box {
           display: flex;
           align-content: center;
@@ -349,9 +353,8 @@ ul {
           padding: 5% 0;
           text-align: center;
           width: 100%;
+          margin-left: 2rem;
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); }
-          #job-frontend .wrapper-1 .boxes .container-box .box:nth-child(even) {
-            margin-left: 2rem; }
           #job-frontend .wrapper-1 .boxes .container-box .box .content {
             display: flex;
             flex-direction: column;
@@ -551,14 +554,18 @@ ul {
     #about .about-text {
       margin: 0;
       padding: 0 25%; }
+  #job-electrical .wrapper-1 .boxes {
+    grid-gap: 1rem; }
   #job-electrical .wrapper .logo-tech {
     top: -11rem; }
   #job-frontend .wrapper-1 .img-frontend {
     width: 60vw; }
+  #job-frontend .wrapper-1 .boxes .container-box .box {
+    margin-left: 1rem; }
   .context .social .contact-me {
     flex-direction: column; } }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) and (min-height: 900px) {
   .logo {
     width: 8rem;
     height: 3rem; }
@@ -629,7 +636,7 @@ ul {
     #contact form {
       display: none; } }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
   body {
     background: #fff; }
   .logo {
@@ -644,15 +651,16 @@ ul {
       #header-home .green-background .phone_bg {
         position: absolute;
         top: 0;
-        height: 65vh;
         width: 100vw;
+        min-height: none;
         visibility: visible; }
     #header-home .navbar ul {
       visibility: hidden; }
     #header-home .context-home {
-      margin: 0; }
+      margin: 0;
+      margin-top: 20%; }
       #header-home .context-home .content-text {
-        margin-top: 30%; }
+        margin: 0; }
         #header-home .context-home .content-text .wrapper {
           margin-bottom: 0.5rem; }
           #header-home .context-home .content-text .wrapper h1 {
@@ -663,11 +671,13 @@ ul {
               margin-bottom: 0.5rem;
               font-size: 0.7rem; }
         #header-home .context-home .content-text h2 {
-          font-size: 0.8rem; }
+          font-size: 1rem; }
+          #header-home .context-home .content-text h2 br {
+            display: none; }
       #header-home .context-home .buttons-home {
         display: grid;
         grid-template-rows: repeat(2, 1fr);
-        margin-top: 15vh; }
+        margin-top: 15%; }
         #header-home .context-home .buttons-home .box {
           margin-right: 10%;
           margin-bottom: 2rem; }
@@ -681,7 +691,7 @@ ul {
       #header-home .context-home .personal_image {
         visibility: hidden; }
   #about {
-    height: 60vh;
+    height: 100%;
     margin-top: 2rem; }
     #about .about-text {
       margin: 0;
@@ -699,7 +709,8 @@ ul {
       #about .about-text .buttons-about {
         align-items: center;
         justify-content: center;
-        margin: 0; }
+        margin: 0;
+        margin-top: 1rem; }
         #about .about-text .buttons-about img {
           position: relative;
           bottom: 0;
@@ -718,7 +729,7 @@ ul {
             #about .about-text .buttons-about .contact-btn a:first-child {
               width: 100%; }
   #job-electrical .wrapper {
-    height: 45vh;
+    height: 100%;
     margin: 0;
     padding-top: 1rem; }
     #job-electrical .wrapper .header {
@@ -737,11 +748,14 @@ ul {
       scroll-snap-type: x proximity; }
       #job-electrical .wrapper .wrapper-1 .boxes {
         position: relative;
-        left: 20vw;
+        grid-template-columns: repeat(5, 1fr);
         margin-bottom: 5%;
         margin-left: 0;
         grid-gap: 1rem;
         width: 100vw; }
+        #job-electrical .wrapper .wrapper-1 .boxes .empty {
+          width: 20vw;
+          display: inline-block; }
         #job-electrical .wrapper .wrapper-1 .boxes .box {
           height: 220px;
           width: 210px;
@@ -762,7 +776,7 @@ ul {
       #job-electrical .wrapper .wrapper-1 img:last-child {
         display: none; }
   #job-frontend .wrapper {
-    height: 45vh;
+    height: 100%;
     margin: 0;
     padding-top: 1rem;
     background: #d9eddf; }
@@ -782,15 +796,21 @@ ul {
         margin-top: 0;
         margin-left: 0;
         width: 100%;
-        margin-bottom: 5%; }
+        margin-bottom: 5%;
+        display: inline-block; }
+        #job-frontend .wrapper .wrapper-1 .boxes .empty {
+          width: 20vw;
+          display: inline-block; }
         #job-frontend .wrapper .wrapper-1 .boxes .logo-tech {
           display: none; }
         #job-frontend .wrapper .wrapper-1 .boxes .container-box {
-          position: relative;
-          left: 20vw; }
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 1rem; }
           #job-frontend .wrapper .wrapper-1 .boxes .container-box .box {
             height: 220px;
-            width: 210px; }
+            width: 210px;
+            margin-left: 0; }
             #job-frontend .wrapper .wrapper-1 .boxes .container-box .box .content {
               padding: 0 5%;
               margin: auto; }
@@ -807,8 +827,10 @@ ul {
   #job-frontend .img-frontend {
     display: none; }
   #contact {
+    margin: 0;
     padding: 0;
-    justify-content: left; }
+    justify-content: left;
+    background: #d9eddf; }
     #contact .context {
       width: 100%; }
       #contact .context h1 {
@@ -823,7 +845,8 @@ ul {
         align-items: center;
         margin-top: 0.5rem; }
         #contact .context .social .contact-me {
-          margin: 0; }
+          margin: 0;
+          flex-direction: row; }
           #contact .context .social .contact-me img {
             margin-right: 1rem; }
           #contact .context .social .contact-me p {
