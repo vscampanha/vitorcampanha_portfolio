@@ -509,11 +509,37 @@ ul {
   background: #fff;
   overflow: hidden;
 
-  .boxes {
-    width: 100vw;
+  .construction {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 3rem auto;
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: $medium-text-color;
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 20%;
+    }
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 5rem auto 3rem auto;
     justify-content: center;
+
+    .box {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .btn-more {
@@ -526,7 +552,7 @@ ul {
       background: #fff;
       color: $primary-color;
       font-weight: 700;
-      font-size: 2vmin;
+      font-size: 1rem;
       margin-bottom: 5rem;
 
       &:hover {
@@ -554,19 +580,19 @@ ul {
     h1 {
       color: $primary-color;
       font-weight: 600;
-      font-size: 2vw;
+      font-size: 2rem;
       text-transform: capitalize;
       margin-bottom: 1rem;
 
       span {
-        font-size: 2vw;
+        font-size: 2rem;
         color: #000;
       }
     }
 
     p {
       font-weight: 500;
-      font-size: 1vw;
+      font-size: 1rem;
       text-transform: capitalize;
       margin-bottom: 1rem;
     }
@@ -621,11 +647,12 @@ ul {
     width: 40vw;
 
     .button {
+      font-family: "Montserrat", sans-serif;
       background: #00c896;
       border-radius: 28px;
       padding: 0.8rem 3rem;
       color: #fff;
-      font-size: 1.1vw;
+      font-size: 1.2rem;
       font-weight: 800;
     }
 
@@ -639,7 +666,7 @@ ul {
       &::placeholder {
         color: #000;
         text-transform: uppercase;
-        font-size: 0.7vw;
+        font-size: 0.8rem;
         font-weight: 600;
         font-family: Montserrat;
       }
@@ -655,7 +682,7 @@ ul {
       &::placeholder {
         color: #000;
         text-transform: uppercase;
-        font-size: 0.7vw;
+        font-size: 0.8rem;
         font-weight: 600;
         font-family: Montserrat;
       }

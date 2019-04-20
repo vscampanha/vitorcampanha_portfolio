@@ -394,11 +394,26 @@ ul {
 #portfolio {
   background: #fff;
   overflow: hidden; }
-  #portfolio .boxes {
-    width: 100vw;
+  #portfolio .construction {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto; }
+    #portfolio .construction h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #2f4858;
+      margin-bottom: 2rem; }
+    #portfolio .construction img {
+      width: 20%; }
+  #portfolio .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 5rem auto 3rem auto;
     justify-content: center; }
+    #portfolio .boxes .box img {
+      width: 100%; }
   #portfolio .btn-more {
     width: 100vw;
     display: flex;
@@ -408,7 +423,7 @@ ul {
       background: #fff;
       color: #00c896;
       font-weight: 700;
-      font-size: 2vmin;
+      font-size: 1rem;
       margin-bottom: 5rem; }
       #portfolio .btn-more a:hover {
         background: #00c896;
@@ -428,15 +443,15 @@ ul {
     #contact .context h1 {
       color: #00c896;
       font-weight: 600;
-      font-size: 2vw;
+      font-size: 2rem;
       text-transform: capitalize;
       margin-bottom: 1rem; }
       #contact .context h1 span {
-        font-size: 2vw;
+        font-size: 2rem;
         color: #000; }
     #contact .context p {
       font-weight: 500;
-      font-size: 1vw;
+      font-size: 1rem;
       text-transform: capitalize;
       margin-bottom: 1rem; }
     #contact .context .social {
@@ -468,11 +483,12 @@ ul {
     padding: 2rem 2rem 1rem 2rem;
     width: 40vw; }
     #contact form .button {
+      font-family: "Montserrat", sans-serif;
       background: #00c896;
       border-radius: 28px;
       padding: 0.8rem 3rem;
       color: #fff;
-      font-size: 1.1vw;
+      font-size: 1.2rem;
       font-weight: 800; }
     #contact form input {
       width: 100%;
@@ -483,7 +499,7 @@ ul {
       #contact form input::placeholder {
         color: #000;
         text-transform: uppercase;
-        font-size: 0.7vw;
+        font-size: 0.8rem;
         font-weight: 600;
         font-family: Montserrat; }
     #contact form textarea {
@@ -495,7 +511,7 @@ ul {
       #contact form textarea::placeholder {
         color: #000;
         text-transform: uppercase;
-        font-size: 0.7vw;
+        font-size: 0.8rem;
         font-weight: 600;
         font-family: Montserrat; }
 
@@ -732,8 +748,10 @@ ul {
     height: 100%;
     margin: 0;
     padding-top: 1rem; }
+    #job-electrical .wrapper h1 {
+      font-size: 1rem; }
     #job-electrical .wrapper .header {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       background: #00c896;
       width: 70vw;
       padding: 0.5rem 1rem 0.1rem 1rem;
@@ -781,7 +799,7 @@ ul {
     padding-top: 1rem;
     background: #d9eddf; }
     #job-frontend .wrapper .header {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       background: #00c896;
       width: 70vw;
       padding: 0.5rem 1rem 0.1rem 1rem;
@@ -826,6 +844,8 @@ ul {
                 padding: 0 0.5rem; }
   #job-frontend .img-frontend {
     display: none; }
+  #portfolio .construction img {
+    width: 50%; }
   #contact {
     margin: 0;
     padding: 0;

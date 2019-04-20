@@ -329,7 +329,6 @@
       .phone_bg {
         position: absolute;
         top: 0;
-        // height: 60vh;
         width: 100vw;
         min-height: none;
 
@@ -472,8 +471,12 @@
         margin: 0;
         padding-top: 1rem;
 
+        h1 {
+          font-size: 1rem;
+        }
+
         .header {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           background: $primary-color;
           width: 70vw;
           padding: 0.5rem 1rem 0.1rem 1rem;
@@ -551,7 +554,7 @@
         background: $secondary-color;
 
         .header {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           background: $primary-color;
           width: 70vw;
           padding: 0.5rem 1rem 0.1rem 1rem;
@@ -623,6 +626,24 @@
       }
       .img-frontend {
         display: none;
+      }
+    }
+  }
+
+  #portfolio {
+    // .boxes {
+    //   display: block;
+    //   margin: 1rem 1rem;
+    // }
+
+    // .btn-more {
+    //   a {
+    //     margin-bottom: 2rem;
+    //   }
+    // }
+    .construction {
+      img {
+        width: 50%;
       }
     }
   }
