@@ -63,6 +63,14 @@ ul {
     grid-template-columns: 1fr 2fr;
     margin-top: 1.5rem;
 
+    input {
+      display: none;
+    }
+
+    .hamburguer {
+      display: none;
+    }
+
     ul {
       display: flex;
       justify-content: flex-end;
