@@ -33,7 +33,9 @@
 
         <div class="container">
           <div class="navbar text-medium">
-            <img src="./img/logo.png" alt="logo" class="logo" />
+            <a href="#header-home">
+              <img src="./img/logo.png" alt="logo" class="logo" />
+            </a>
 
             <div class="menu-wrap">
               <input type="checkbox" class="toggler" />
@@ -41,13 +43,19 @@
               <div class="menu">
                 <div>
                   <div></div>
-                  <ul>
-                    <li><a href="#" class="current">Home</a></li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Job Path</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                  <ul class="change">
+                    <li><a href="#header-home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
                     <li>
-                      <a href="#" class="btn btn-primary text-bold">Contact</a>
+                      <a href="#job-electrical">Job Path</a>
+                    </li>
+                    <li>
+                      <a href="#job-frontend">Portfolio</a>
+                    </li>
+                    <li>
+                      <a href="#contact" class=" btn btn-primary text-bold"
+                        >Contact</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -71,25 +79,28 @@
                 <div class="box">
                   <div class="btn-box"></div>
                   <div class="btn-header">
-                    <a href="#">Electrical</a>
-                    <a href="#">Enginneer</a>
+                    <a href="#job-electrical">Electrical</a>
+                    <a href="#job-electrical">Enginneer</a>
                   </div>
                 </div>
                 <div class="box">
                   <div class="btn-box"></div>
                   <div class="btn-header">
-                    <a href="#">Frontend</a>
-                    <a href="#">Developer</a>
+                    <a href="#job-frontend">Frontend</a>
+                    <a href="#job-frontend">Developer</a>
                   </div>
                 </div>
               </div>
             </div>
 
             <div class="social">
-              <a href="#">
+              <a target="_blank" href="https://github.com/vscampanha">
                 <img src="./img/social/Group 2.2.svg" alt="" />
               </a>
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/vitorcampanha/"
+              >
                 <img src="./img/social/Group 2.1.svg" alt="" />
               </a>
             </div>
@@ -120,8 +131,13 @@
           </p>
           <div class="buttons-about">
             <div class="contact-btn">
-              <a href="#" class="btn  text-bold">Contact</a>
-              <a href="#" class="btn  text-bold">Download CV</a>
+              <a href="#contact" class="btn  text-bold">Contact</a>
+              <a
+                href="https://drive.google.com/file/d/1fpSMqOCWLSz-E0tmpnMTop5SSSQOs1yx/view?usp=sharing"
+                target="_blank"
+                class="btn  text-bold"
+                >Download CV</a
+              >
             </div>
             <img src="./img/personal_img.svg" alt="Personal Image" />
           </div>
@@ -284,11 +300,14 @@
               </div>
             </div>
             <div class="contact-social">
-              <a href="#">
+              <a target="_blank" href="https://github.com/vscampanha">
                 <img src="./img/social/Group 2.2.svg" alt="" />
               </a>
 
-              <a href="#">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/vitorcampanha/"
+              >
                 <img src="./img/social/Group 2.1.svg" alt="" />
               </a>
             </div>
@@ -309,5 +328,7 @@
         </form>
       </section>
     </body>
+
+    <script src="./js/main.js"></script>
   </head>
 </html>

@@ -59,6 +59,9 @@
   font-weight: 500;
   padding: 0 2rem; }
 
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
@@ -723,7 +726,7 @@ ul {
         height: 60px;
         border-radius: 50%;
         padding: 1rem;
-        background: #00c896;
+        background: #2f4858;
         display: flex;
         align-items: center;
         justify-content: center; }
@@ -783,25 +786,8 @@ ul {
         flex: none;
         align-items: center;
         justify-content: center;
-        transform: scale(0);
-        transition: all 0.4s ease; }
-      #header-home .navbar .menu-wrap .menu > div > div {
-        text-align: center;
-        max-width: 90vw;
-        max-height: 100vh;
-        opacity: 0;
-        transition: opacity 0.4s ease; }
-      #header-home .navbar .menu-wrap .menu > div > div > ul > li {
-        list-style: none;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 2rem; }
-      #header-home .navbar .menu-wrap .menu > div > div > ul > li > a {
-        color: inherit;
-        text-decoration: none;
-        transition: color 0.4s ease; }
-      #header-home .navbar .menu-wrap .menu > div > div > ul > li > a:hover {
-        color: #d9eddf; }
+        transform: translateX(150vw);
+        transition: all 0.4s ease-in-out; }
     #header-home .context-home {
       margin: 0;
       margin-top: 20%; }
@@ -858,9 +844,6 @@ ul {
         margin: 0;
         margin-top: 1rem; }
         #about .about-text .buttons-about img {
-          position: relative;
-          bottom: 0;
-          right: 0;
           width: 10rem;
           display: inline-block;
           width: 146px;
@@ -890,12 +873,14 @@ ul {
     #job-electrical .wrapper .logo-tech {
       display: none; }
     #job-electrical .wrapper .wrapper-1 {
+      position: unset;
       top: 0;
       margin-left: 0;
       overflow-x: scroll;
       scroll-snap-type: x proximity; }
       #job-electrical .wrapper .wrapper-1 .boxes {
-        position: relative;
+        position: unset;
+        z-index: initial;
         grid-template-columns: repeat(5, 1fr);
         margin-bottom: 5%;
         margin-left: 0;
@@ -937,6 +922,7 @@ ul {
       margin-bottom: 2rem; }
     #job-frontend .wrapper .wrapper-1 {
       top: 0;
+      position: unset;
       overflow-x: scroll;
       scroll-snap-type: x proximity; }
       #job-frontend .wrapper .wrapper-1 .boxes {
@@ -945,7 +931,9 @@ ul {
         margin-left: 0;
         width: 100%;
         margin-bottom: 5%;
-        display: inline-block; }
+        display: inline-block;
+        z-index: initial;
+        position: unset; }
         #job-frontend .wrapper .wrapper-1 .boxes .empty {
           width: 20vw;
           display: inline-block; }

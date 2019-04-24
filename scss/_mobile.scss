@@ -394,7 +394,7 @@
         height: 60px;
         border-radius: 50%;
         padding: 1rem;
-        background: $primary-color;
+        background: $medium-text-color;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -482,35 +482,8 @@
         align-items: center;
         justify-content: center;
 
-        transform: scale(0);
-        transition: all 0.4s ease;
-      }
-
-      .menu-wrap .menu > div > div {
-        text-align: center;
-        max-width: 90vw;
-        max-height: 100vh;
-        opacity: 0;
-
-        transition: opacity 0.4s ease;
-      }
-
-      .menu-wrap .menu > div > div > ul > li {
-        list-style: none;
-        color: #fff;
-        font-size: 1.5rem;
-        padding: 2rem;
-      }
-
-      .menu-wrap .menu > div > div > ul > li > a {
-        color: inherit;
-        text-decoration: none;
-
-        transition: color 0.4s ease;
-      }
-
-      .menu-wrap .menu > div > div > ul > li > a:hover {
-        color: $secondary-color;
+        transform: translateX(150vw);
+        transition: all 0.4s ease-in-out;
       }
     }
 
@@ -609,9 +582,6 @@
         margin-top: 1rem;
 
         img {
-          position: relative;
-          bottom: 0;
-          right: 0;
           width: 10rem;
           display: inline-block;
           width: 146px;
@@ -660,6 +630,7 @@
           display: none;
         }
         .wrapper-1 {
+          position: unset;
           top: 0;
           margin-left: 0;
 
@@ -667,7 +638,8 @@
           scroll-snap-type: x proximity;
 
           .boxes {
-            position: relative;
+            position: unset;
+            z-index: initial;
 
             grid-template-columns: repeat(5, 1fr);
 
@@ -736,7 +708,7 @@
 
         .wrapper-1 {
           top: 0;
-
+          position: unset;
           overflow-x: scroll;
           scroll-snap-type: x proximity;
 
@@ -747,6 +719,8 @@
             width: 100%;
             margin-bottom: 5%;
             display: inline-block;
+            z-index: initial;
+            position: unset;
 
             .empty {
               width: 20vw;
