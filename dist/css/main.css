@@ -522,13 +522,15 @@ ul {
         font-size: 0.8rem;
         font-weight: 600;
         font-family: Montserrat; }
+    #contact form .data {
+      display: flex;
+      justify-content: center; }
     #contact form button {
       cursor: pointer; }
 
 #main-footer {
-  background: #d9eddf;
   text-align: center;
-  margin: 2rem; }
+  padding: 2rem; }
   #main-footer p {
     font-weight: 600;
     font-size: 0.8rem; }
@@ -725,6 +727,14 @@ ul {
       display: none; } }
 
 @media (max-width: 600px) {
+  html {
+    overflow: scroll;
+    overflow-x: hidden; }
+  ::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */ }
   body {
     background: #fff; }
   .logo {
@@ -1057,4 +1067,15 @@ ul {
         #contact .context .social .contact-social {
           margin: 0; }
     #contact form {
-      display: none; } }
+      display: none; }
+  #main-footer {
+    background: #d9eddf;
+    padding: 0.5rem; } }
+
+@media (max-width: 320px) {
+  #header-home .context-home .content-text .wrapper h1 {
+    font-size: 1.3rem; }
+  #header-home .context-home .content-text h2 {
+    font-size: 0.8rem; }
+  #about .about-text .buttons-about .contact-btn a {
+    font-size: 0.8rem; } }

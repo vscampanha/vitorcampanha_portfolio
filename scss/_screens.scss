@@ -406,6 +406,15 @@
 //Smartphone*********************************************
 
 @media (max-width: 600px) {
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
   body {
     background: #fff;
   }
@@ -938,5 +947,25 @@
     form {
       display: none;
     }
+  }
+
+  #main-footer {
+    background: $secondary-color;
+
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  #header-home .context-home .content-text .wrapper h1 {
+    font-size: 1.3rem;
+  }
+
+  #header-home .context-home .content-text h2 {
+    font-size: 0.8rem;
+  }
+
+  #about .about-text .buttons-about .contact-btn a {
+    font-size: 0.8rem;
   }
 }

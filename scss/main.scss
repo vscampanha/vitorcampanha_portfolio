@@ -701,6 +701,11 @@ ul {
       }
     }
 
+    .data {
+      display: flex;
+      justify-content: center;
+    }
+
     button {
       cursor: pointer;
     }
@@ -708,9 +713,8 @@ ul {
 }
 
 #main-footer {
-  background: $secondary-color;
   text-align: center;
-  margin: 2rem;
+  padding: 2rem;
   p {
     font-weight: 600;
     font-size: 0.8rem;
