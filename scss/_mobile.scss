@@ -1,3 +1,94 @@
+@media (min-width: 3200px) {
+  .container {
+    max-width: 4000px;
+  }
+
+  #contact {
+    padding: 10rem;
+  }
+
+  #contact form input {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 2200px) {
+  .logo {
+    width: 50%;
+    height: 100%;
+  }
+
+  .container {
+    margin-top: 2%;
+    max-width: 3000px;
+    padding: 0 10vw;
+  }
+
+  @media (min-width: 3700px) {
+    .container {
+      max-width: 4000px;
+    }
+  }
+
+  #header-home .context-home .social img {
+    width: 3.5vw;
+  }
+
+  #job-electrical .wrapper .img-electrical {
+    width: 100vw;
+  }
+
+  #job-electrical .wrapper .logo-tech {
+    margin-left: 12%;
+    padding: 0;
+    top: -20rem;
+    width: 60vw;
+    display: block;
+  }
+
+  #portfolio .construction h1 {
+    font-size: 2vw;
+  }
+
+  #contact {
+    .context {
+      h1 {
+        font-size: 2vw;
+
+        span {
+          font-size: inherit;
+        }
+      }
+
+      p {
+        font-size: 1vw;
+      }
+
+      .social .contact-me img {
+        width: 3vw;
+      }
+
+      .social .contact-social a img {
+        width: 3vw;
+      }
+    }
+
+    form {
+      input::placeholder {
+        font-size: 0.8vw;
+      }
+
+      textarea::placeholder {
+        font-size: 0.8vw;
+      }
+
+      .button {
+        font-size: 1.2vw;
+      }
+    }
+  }
+}
+
 @media (max-width: 1366px) {
   #header-home .context-home .personal_image {
     right: 0;
@@ -153,9 +244,9 @@
   }
 }
 
-//IPAD******************************
+//IPAD**************************************************
 
-@media (max-width: 768px) and (min-height: 900px) {
+@media (max-width: 768px) and (min-height: 1000px) {
   .logo {
     width: 8rem;
     height: 3rem;
