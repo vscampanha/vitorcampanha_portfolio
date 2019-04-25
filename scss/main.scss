@@ -579,6 +579,7 @@ ul {
 #contact {
   display: flex;
   padding: 5rem 4rem;
+  padding-bottom: 0;
   margin: 1rem 5%;
   justify-content: center;
 
@@ -702,4 +703,13 @@ ul {
   }
 }
 
-@import "sreens";
+#main-footer {
+  text-align: center;
+  margin: 2rem;
+  p {
+    font-weight: 600;
+    font-size: 1vw;
+  }
+}
+
+@import "screens";

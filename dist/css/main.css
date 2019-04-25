@@ -439,6 +439,7 @@ ul {
 #contact {
   display: flex;
   padding: 5rem 4rem;
+  padding-bottom: 0;
   margin: 1rem 5%;
   justify-content: center; }
   #contact .context {
@@ -522,11 +523,19 @@ ul {
         font-weight: 600;
         font-family: Montserrat; }
 
+#main-footer {
+  text-align: center;
+  margin: 2rem; }
+  #main-footer p {
+    font-weight: 600;
+    font-size: 1vw; }
+
 @media (min-width: 3200px) {
   .container {
     max-width: 4000px; }
   #contact {
-    padding: 10rem; }
+    padding: 10rem;
+    padding-bottom: 0; }
   #contact form input {
     padding: 1rem; } }
 
