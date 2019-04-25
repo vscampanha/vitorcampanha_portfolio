@@ -522,13 +522,16 @@ ul {
         font-size: 0.8rem;
         font-weight: 600;
         font-family: Montserrat; }
+    #contact form button {
+      cursor: pointer; }
 
 #main-footer {
+  background: #d9eddf;
   text-align: center;
   margin: 2rem; }
   #main-footer p {
     font-weight: 600;
-    font-size: 1vw; }
+    font-size: 0.8rem; }
 
 @media (min-width: 3200px) {
   .container {
@@ -580,7 +583,9 @@ ul {
   #contact form textarea::placeholder {
     font-size: 0.8vw; }
   #contact form .button {
-    font-size: 1.2vw; } }
+    font-size: 1.2vw; }
+  #main-footer p {
+    font-size: 2rem; } }
 
 @media (max-width: 1366px) {
   #header-home .context-home .personal_image {

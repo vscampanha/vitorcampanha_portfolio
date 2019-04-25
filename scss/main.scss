@@ -700,15 +700,20 @@ ul {
         font-family: Montserrat;
       }
     }
+
+    button {
+      cursor: pointer;
+    }
   }
 }
 
 #main-footer {
+  background: $secondary-color;
   text-align: center;
   margin: 2rem;
   p {
     font-weight: 600;
-    font-size: 1vw;
+    font-size: 0.8rem;
   }
 }
 
