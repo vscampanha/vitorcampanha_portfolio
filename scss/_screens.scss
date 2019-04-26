@@ -411,8 +411,8 @@
     overflow-x: hidden;
   }
   ::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
+    width: 0px; // Remove scrollbar space
+    background: transparent; // Scrollbar invisible
   }
 
   body {
@@ -659,6 +659,7 @@
   #about {
     height: 100%;
     margin-top: 2rem;
+    padding: 0;
 
     .about-text {
       margin: 0;
@@ -839,9 +840,6 @@
             }
 
             .container-box {
-              // position: relative;
-              // left: 20vw;
-
               display: grid;
               grid-template-columns: repeat(4, 1fr);
               grid-gap: 1rem;
@@ -884,16 +882,6 @@
   }
 
   #portfolio {
-    // .boxes {
-    //   display: block;
-    //   margin: 1rem 1rem;
-    // }
-
-    // .btn-more {
-    //   a {
-    //     margin-bottom: 2rem;
-    //   }
-    // }
     .construction {
       img {
         width: 50%;

@@ -135,11 +135,9 @@ ul {
             padding-bottom: 1rem;
             font-size: 1.2vw; }
   #header-home .context-home {
-    margin-left: 2rem;
-    overflow: hidden;
     display: flex; }
     #header-home .context-home .content-text {
-      margin-top: 25vh; }
+      margin: 25vh 3vw 0 3vw; }
       #header-home .context-home .content-text .wrapper {
         display: flex;
         align-items: baseline;
@@ -162,7 +160,7 @@ ul {
           transition: padding 0.3s ease-in-out;
           max-height: 4rem; }
         #header-home .context-home .buttons-home .box:hover .btn-box {
-          padding: 3rem 8rem; }
+          padding: 5vmin 13vmin; }
       #header-home .context-home .buttons-home .btn-box {
         position: absolute;
         padding: 4vmin 12vmin;
@@ -194,10 +192,10 @@ ul {
       right: 0; }
 
 #about {
-  height: 75vh;
-  background: #fff; }
+  background: #fff;
+  display: flex;
+  padding: 2rem; }
   #about .about-text {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -732,9 +730,7 @@ ul {
     overflow-x: hidden; }
   ::-webkit-scrollbar {
     width: 0px;
-    /* Remove scrollbar space */
-    background: transparent;
-    /* Optional: just make scrollbar invisible */ }
+    background: transparent; }
   body {
     background: #fff; }
   .logo {
@@ -899,7 +895,8 @@ ul {
         visibility: hidden; }
   #about {
     height: 100%;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    padding: 0; }
     #about .about-text {
       margin: 0;
       padding: 0; }
